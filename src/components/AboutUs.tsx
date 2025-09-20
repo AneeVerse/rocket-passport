@@ -73,12 +73,12 @@ export default function AboutUs() {
             </h2>
 
             <p className="text-gray-600 leading-relaxed mb-4 text-sm sm:text-base">
-              Whether you're facing a tax audit, need assistance with tax compliance,
+              Whether you&apos;re facing a tax audit, need assistance with tax compliance,
               or are looking for ways to maximize tax benefits.
             </p>
             <p className="text-gray-600 leading-relaxed mb-6 text-sm sm:text-base">
               Explore our website to learn more about our services and get to know
-              our team of tax attorneys. When you're ready, Lawyer.
+              our team of tax attorneys. When you&apos;re ready, Lawyer.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-8">

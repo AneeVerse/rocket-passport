@@ -15,7 +15,7 @@ export default function Hero() {
             
             <p className="text-base sm:text-lg text-gray-600 max-w-lg mx-auto lg:mx-0 leading-relaxed">
               We know that every case is unique, and we approach each with meticulous attention 
-              and detail. Whether you're facing charges related DUI, drug offenses, assault.
+              and detail. Whether you&apos;re facing charges related DUI, drug offenses, assault.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">

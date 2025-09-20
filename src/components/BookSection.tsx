@@ -73,9 +73,9 @@ export default function BookSection() {
                   New Passport (Tatkaal)
                 </h3>
                 <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                  <span className="text-red-500 font-semibold">Spontaneous travel plans?</span> We've 
+                  <span className="text-red-500 font-semibold">Spontaneous travel plans?</span> We&apos;ve 
                   got you covered! Grab your passport ASAP with our express 
-                  Tatkaal service – because adventures can't wait!
+                  Tatkaal service – because adventures can&apos;t wait!
                 </p>
               </div>
             </div>
