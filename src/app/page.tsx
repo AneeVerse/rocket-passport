@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import BookSection from '@/components/BookSection';
 import AboutUs from '@/components/AboutUs';
+import ServiceSection from '@/components/ServiceSection';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <BookSection />
       <AboutUs />
+      <ServiceSection />
     </div>
   );
 }
