@@ -86,8 +86,8 @@ export default function Footer() {
           </div>
 
           {/* Social Media Section */}
-          <div className="flex justify-start mt-12">
-            <div className="flex space-x-6">
+          <div className="flex justify-center lg:justify-start mt-8 sm:mt-12">
+          <div className="flex space-x-4 sm:space-x-6">
               {/* Instagram */}
               <a href="https://www.instagram.com/tigerterrain.in" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors duration-200 p-2 hover:bg-gray-800 rounded-full">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

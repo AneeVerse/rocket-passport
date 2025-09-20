@@ -29,19 +29,19 @@ export default function TypesOfPassports() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-[1420px] mx-auto px-6 sm:px-10 lg:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+    <section className="py-12 sm:py-16 lg:py-20 bg-white">
+      <div className="max-w-[1420px] mx-auto px-4 sm:px-6 lg:px-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
           {/* Left: Title + Accordion */}
-          <div className="lg:col-span-5">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#121518] mb-3">
+          <div className="lg:col-span-5 order-2 lg:order-1">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-[#121518] mb-3 text-center lg:text-left">
               Types Of <span className="text-[#ff5757]">Passports</span>
             </h2>
-            <p className="text-[#5f6570] mb-8 text-[15px] md:text-base">
+            <p className="text-[#5f6570] mb-6 sm:mb-8 text-sm sm:text-base text-center lg:text-left">
               There are three types of Indian passports. These include-
             </p>
 
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-3 sm:gap-4">
               {faqItems.map((item, idx) => {
                 const isOpen = openIndex === idx;
                 return (
@@ -53,11 +53,11 @@ export default function TypesOfPassports() {
                   >
                     <button
                       aria-expanded={isOpen}
-                      className="w-full grid grid-cols-[1fr_auto] items-center text-left px-6 h-12"
+                      className="w-full grid grid-cols-[1fr_auto] items-center text-left px-4 sm:px-6 h-12 sm:h-14"
                       onClick={() => setOpenIndex(isOpen ? null : idx)}
                     >
-                      <span className={`font-bold leading-none mt-2 ${isOpen ? 'text-[#ff5757]' : 'text-[#111827]'}`}>{item.title}</span>
-                      <span className={`inline-flex items-center mt-2 justify-center leading-none ${isOpen ? 'text-[#ff5757]' : 'text-[#ff5757]'} text-3xl md:text-4xl font-semibold w-10 h-10`}>
+                      <span className={`font-bold leading-none mt-2 text-sm sm:text-base ${isOpen ? 'text-[#ff5757]' : 'text-[#111827]'}`}>{item.title}</span>
+                      <span className={`inline-flex items-center mt-2 justify-center leading-none ${isOpen ? 'text-[#ff5757]' : 'text-[#ff5757]'} text-2xl sm:text-3xl lg:text-4xl font-semibold w-8 h-8 sm:w-10 sm:h-10`}>
                         {isOpen ? '−' : '+'}
                       </span>
                     </button>
@@ -66,7 +66,7 @@ export default function TypesOfPassports() {
                         isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
                       }`}
                     >
-                      <div className="overflow-hidden px-6 pb-5 -mt-2 text-[#4b5563] text-sm leading-relaxed">
+                      <div className="overflow-hidden px-4 sm:px-6 pb-4 sm:pb-5 -mt-2 text-[#4b5563] text-xs sm:text-sm leading-relaxed">
                         {item.content}
                       </div>
                     </div>
@@ -77,13 +77,13 @@ export default function TypesOfPassports() {
           </div>
 
           {/* Right: Combined passports image */}
-          <div className="lg:col-span-7 flex items-center justify-center lg:justify-end">
+          <div className="lg:col-span-7 order-1 lg:order-2 flex items-center justify-center lg:justify-end mb-6 lg:mb-0">
             <Image
               src="/images/passport-right.webp"
               alt="Types of Indian Passports"
               width={900}
               height={620}
-              className="w-full max-w-[920px] h-100 object-contain"
+              className="w-full max-w-[400px] sm:max-w-[500px] lg:max-w-[920px] h-auto object-contain"
               priority
             />
           </div>
