@@ -6,6 +6,7 @@ import ServiceSection from '@/components/ServiceSection';
 import TypesOfPassports from '@/components/TypesOfPassports';
 import BlogSection from '@/components/BlogSection';
 import ConsultationSection from '@/components/ConsultationSection';
+import BranchesSection from '@/components/BranchesSection';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <ServiceSection />
       <TypesOfPassports />
       <BlogSection />
+      <BranchesSection />
       <ConsultationSection />
     </div>
   );
