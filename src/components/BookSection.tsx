@@ -2,10 +2,10 @@ import Image from 'next/image';
 
 export default function BookSection() {
   return (
-    <section className="relative -mt-16 sm:-mt-20 lg:-mt-24 z-30">
+    <section className="relative mt-0 lg:-mt-24 z-30">
       <div className="max-w-[1400] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main container with white background and curved pattern */}
-        <div className="bg-gray-50 rounded-t-2xl sm:rounded-t-3xl relative overflow-hidden pt-12 sm:pt-16 pb-16 sm:pb-24 px-4 sm:px-8 lg:px-16">
+        <div className="bg-gray-50 rounded-t-2xl sm:rounded-t-3xl relative overflow-hidden pt-16 sm:pt-20 lg:pt-16 pb-16 sm:pb-24 px-4 sm:px-8 lg:px-16">
           {/* Decorative wave pattern background */}
           <div className="absolute inset-0 opacity-5">
             <svg width="100%" height="100%" viewBox="0 0 1200 400" className="w-full h-full">

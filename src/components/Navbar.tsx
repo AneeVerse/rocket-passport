@@ -83,47 +83,78 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu - Full Screen Overlay */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg border-t border-gray-200 z-40">
-          <div className="px-4 py-2 space-y-1">
-            <Link 
-              href="/" 
-              className="block px-3 py-3 text-gray-700 hover:text-gray-900 hover:bg-gray-50 text-base font-medium transition-colors rounded-md"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Home
+        <div className="md:hidden fixed inset-0 bg-white z-50 flex flex-col">
+          {/* Header with logo and close button */}
+          <div className="flex justify-between items-center px-4 py-4 border-b border-gray-200">
+            <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
+              <Image
+                src="/website-logo.svg"
+                alt="Stardom Logo"
+                width={125}
+                height={23}
+                className="h-5 w-auto"
+              />
             </Link>
-            <Link 
-              href="/pricing" 
-              className="block px-3 py-3 text-gray-700 hover:text-gray-900 hover:bg-gray-50 text-base font-medium transition-colors rounded-md"
+            <button
+              type="button"
               onClick={() => setIsMobileMenuOpen(false)}
+              className="bg-gray-100 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#027b7a]"
             >
-              Pricing
-            </Link>
-            <Link 
-              href="/about" 
-              className="block px-3 py-3 text-gray-700 hover:text-gray-900 hover:bg-gray-50 text-base font-medium transition-colors rounded-md"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              About us
-            </Link>
-            <Link 
-              href="/resources" 
-              className="block px-3 py-3 text-gray-700 hover:text-gray-900 hover:bg-gray-50 text-base font-medium transition-colors rounded-md"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Resources
-            </Link>
-            <div className="pt-2 pb-2">
+              <span className="sr-only">Close menu</span>
+              <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+          {/* Menu Content */}
+          <div className="flex-1 flex flex-col justify-center px-6 py-8">
+            <div className="space-y-2">
+              <Link 
+                href="/" 
+                className="block px-4 py-4 text-gray-700 hover:text-gray-900 hover:bg-gray-50 text-xl font-medium transition-colors rounded-lg text-center"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Home
+              </Link>
+              <Link 
+                href="/pricing" 
+                className="block px-4 py-4 text-gray-700 hover:text-gray-900 hover:bg-gray-50 text-xl font-medium transition-colors rounded-lg text-center"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Pricing
+              </Link>
+              <Link 
+                href="/about" 
+                className="block px-4 py-4 text-gray-700 hover:text-gray-900 hover:bg-gray-50 text-xl font-medium transition-colors rounded-lg text-center"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                About us
+              </Link>
+              <Link 
+                href="/resources" 
+                className="block px-4 py-4 text-gray-700 hover:text-gray-900 hover:bg-gray-50 text-xl font-medium transition-colors rounded-lg text-center"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Resources
+              </Link>
+            </div>
+
+            {/* CTA Button */}
+            <div className="mt-8 px-4">
               <button 
-                className="w-full bg-[#027b7a] text-white px-6 py-3 rounded-lg text-base font-medium hover:bg-[#026968] transition-colors"
+                className="w-full bg-[#027b7a] text-white px-6 py-4 rounded-lg text-lg font-medium hover:bg-[#026968] transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Request Case Evolution →
               </button>
             </div>
           </div>
+
+          {/* Footer space for balance */}
+          <div className="h-16"></div>
         </div>
       )}
     </nav>

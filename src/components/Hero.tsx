@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="max-w-[1400] mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center relative z-10">
           {/* Left Content */}
-          <div className="space-y-6 lg:space-y-8 text-center lg:text-left">
+          <div className="space-y-6 lg:space-y-8 text-center lg:text-left order-1 lg:order-1">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-[55px] font-normal text-gray-900 leading-tight font-serif">
               Protect Your Future Life,{' '}
               <span className="block">Our Best Lawyers</span>
@@ -29,7 +29,7 @@ export default function Hero() {
           </div>
 
           {/* Right Content - Form with Background Images */}
-          <div className="relative order-first lg:order-last">
+          <div className="relative order-2 lg:order-2">
             {/* Background Passport Images - Hidden on mobile, visible on larger screens */}
             <div className="hidden md:absolute md:inset-0 md:flex md:items-center md:justify-center">
               {/* Left Passport (Blue) - Tilted */}
