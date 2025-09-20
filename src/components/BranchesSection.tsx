@@ -77,7 +77,7 @@ const branches: Branch[] = [
 export default function BranchesSection() {
   return (
     <section className="py-16">
-      <div className="mx-auto max-w-[1350px] px-4">
+      <div className="mx-auto max-w-[1390px] px-4">
         <h2 className="text-center text-[42px] md:text-[48px] font-serif font-bold text-[#1f1f1f]">
           Our <span className="text-[#ef4444]">Branches</span>
         </h2>
