@@ -123,7 +123,7 @@ function BlogCard({ post, index }: { post: BlogItem; index: number }) {
 export default function BlogSection() {
   return (
     <section className="bg-[#f6f3ff] py-16">
-      <div className="mx-auto max-w-[1200px] px-4">
+      <div className="mx-auto max-w-[1350px] px-4">
         {/* Heading */}
         <div className="mb-10 text-center">
           <span className="inline-block rounded-full bg-white px-4 py-2 text-sm font-medium text-[#5a3df0] shadow-sm">
