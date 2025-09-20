@@ -4,6 +4,7 @@ import BookSection from '@/components/BookSection';
 import AboutUs from '@/components/AboutUs';
 import ServiceSection from '@/components/ServiceSection';
 import TypesOfPassports from '@/components/TypesOfPassports';
+import BlogSection from '@/components/BlogSection';
 
 export default function Home() {
   return (
@@ -12,8 +13,9 @@ export default function Home() {
       <Hero />
       <BookSection />
       <AboutUs />
-      <TypesOfPassports />
       <ServiceSection />
+      <TypesOfPassports />
+      <BlogSection />
     </div>
   );
 }
