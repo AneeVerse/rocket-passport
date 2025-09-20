@@ -42,9 +42,8 @@ export default function ServiceSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* Left intro column */}
           <div className="lg:col-span-4 flex flex-col justify-center">
-            <div className="inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium mb-6 bg-white/70 text-[#6E59F9] ring-1 ring-[#E9E2FF]">
+            <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium mb-6 bg-white/70 text-[#6E59F9] ring-1 ring-[#E9E2FF] w-fit">
               Our Services
-              
             </div>
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#1f1f1f] leading-tight mb-5">
               Tax Resolution
@@ -54,10 +53,10 @@ export default function ServiceSection() {
               Explore our website to learn more about our services and get to know our team of tax
               attorneys. When you&apos;re ready Lawyer.
             </p>
-            <button className="inline-flex items-center gap-3 bg-[#6E59F9] hover:bg-[#5C48F5] text-white font-semibold py-3 px-5 rounded-lg transition-colors w-max">
-              View Our Services
-              <Image src="/images/service/arrow_right.svg" alt="arrow" width={18} height={18} />
-            </button>
+             <button className="inline-flex items-center gap-2 bg-[#6E59F9] hover:bg-[#5C48F5] text-white font-semibold py-3 px-6 rounded-lg transition-colors w-fit">
+               About Our Service
+               <Image src="/images/service/arrow_right.svg" alt="arrow" width={18} height={18} />
+             </button>
           </div>
 
           {/* Right services grid */}
@@ -66,7 +65,7 @@ export default function ServiceSection() {
               return (
                 <div
                   key={`${service.title}-${idx}`}
-                  className="group relative rounded-2xl p-6 md:p-7 ring-1 ring-[#E9E2FF] bg-white text-[#101010] transition-colors duration-200 hover:bg-[#6E59F9] hover:text-white shadow-sm"
+                  className="group relative rounded-2xl p-6 md:p-7 ring-1 ring-[#E9E2FF] bg-white text-[#101010] transition-colors duration-200 hover:bg-[#6E59F9] hover:text-white shadow-sm min-h-[200px]"
                 >
                   {/* cut-out notch top-right */}
                   <div className="pointer-events-none before:content-[''] before:absolute before:-top-4 before:-right-4 before:w-18 before:h-18 before:bg-[#F7F3FF] before:rounded-full"></div>
@@ -78,12 +77,12 @@ export default function ServiceSection() {
 
                   {/* icon bubble */}
                   <div className="mb-4">
-                    <div className="inline-flex items-center justify-center rounded-full w-12 h-12 bg-[#EFE9FF] transition-colors duration-200 group-hover:bg-white/20">
+                    <div className="inline-flex items-center justify-center rounded-full w-14 h-14 bg-[#EFE9FF] transition-colors duration-200 group-hover:bg-white/20">
                       <Image
                         src={service.icon}
                         alt="service"
-                        width={26}
-                        height={26}
+                        width={32}
+                        height={32}
                         className="transition group-hover:invert group-hover:brightness-0"
                       />
                     </div>
