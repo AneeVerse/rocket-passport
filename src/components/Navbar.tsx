@@ -15,11 +15,11 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             <Link href="/">
               <Image
-                src="/website-logo.svg"
+                src="/images/nav-logo.png"
                 alt="Stardom Logo"
                 width={125}
                 height={23}
-                className="h-5 md:h-6 w-auto"
+                className="h-15 md:h-20 w-auto"
               />
             </Link>
           </div>
@@ -31,25 +31,25 @@ export default function Navbar() {
                 href="/" 
                 className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
               >
-                Home
+                Services
               </Link>
               <Link 
                 href="/pricing" 
                 className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
               >
-                Pricing
+                About
               </Link>
               <Link 
                 href="/about" 
                 className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
               >
-                About us
+                Blog
               </Link>
               <Link 
                 href="/resources" 
                 className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
               >
-                Resources
+                Contact Us
               </Link>
             </div>
           </div>
@@ -57,7 +57,7 @@ export default function Navbar() {
           {/* CTA Button - Desktop */}
           <div className="hidden md:flex items-center">
             <button className="bg-[#027b7a] text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-[#026968] transition-colors">
-              Request Case Evolution →
+              Get Free Consultation →
             </button>
           </div>
 
@@ -90,11 +90,11 @@ export default function Navbar() {
           <div className="flex justify-between items-center px-4 py-4 border-b border-gray-200">
             <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
               <Image
-                src="/website-logo.svg"
+                src="/images/nav-logo.png"
                 alt="Stardom Logo"
                 width={125}
                 height={23}
-                className="h-5 w-auto"
+                className="h-15 w-auto"
               />
             </Link>
             <button
@@ -117,28 +117,28 @@ export default function Navbar() {
                 className="block px-4 py-4 text-gray-700 hover:text-gray-900 hover:bg-gray-50 text-xl font-medium transition-colors rounded-lg text-center"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Home
+                Services
               </Link>
               <Link 
                 href="/pricing" 
                 className="block px-4 py-4 text-gray-700 hover:text-gray-900 hover:bg-gray-50 text-xl font-medium transition-colors rounded-lg text-center"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Pricing
+                About
               </Link>
               <Link 
                 href="/about" 
                 className="block px-4 py-4 text-gray-700 hover:text-gray-900 hover:bg-gray-50 text-xl font-medium transition-colors rounded-lg text-center"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                About us
+                Blog
               </Link>
               <Link 
                 href="/resources" 
                 className="block px-4 py-4 text-gray-700 hover:text-gray-900 hover:bg-gray-50 text-xl font-medium transition-colors rounded-lg text-center"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Resources
+                Contact Us
               </Link>
             </div>
 
@@ -148,7 +148,7 @@ export default function Navbar() {
                 className="w-full bg-[#027b7a] text-white px-6 py-4 rounded-lg text-lg font-medium hover:bg-[#026968] transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Request Case Evolution →
+                Get Free Consultation →
               </button>
             </div>
           </div>

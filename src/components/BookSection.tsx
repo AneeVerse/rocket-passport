@@ -40,13 +40,12 @@ export default function BookSection() {
               </div>
               <div className="flex-1 text-center sm:text-left">
                 <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-2">
-                  New Passport (Normal)
+                  New Passport Application
                 </h3>
                 <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                  <span className="text-red-500 font-semibold">Ready to explore?</span> Get your new 
-                  passport the easy way – no rush, no stress, just smooth sailing into 
-                  your next adventure!
+                  Complete guidance and document support for fresh passport applications with smooth, quick, and hassle-free processing.
                 </p>
+
               </div>
             </div>
 
@@ -70,13 +69,12 @@ export default function BookSection() {
               </div>
               <div className="flex-1 text-center sm:text-left">
                 <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-2">
-                  New Passport (Tatkaal)
+                  Tatkal Passport Service
                 </h3>
                 <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                  <span className="text-red-500 font-semibold">Spontaneous travel plans?</span> We&apos;ve 
-                  got you covered! Grab your passport ASAP with our express 
-                  Tatkaal service – because adventures can&apos;t wait!
+                  Urgent passport processing within 3-5 working days for emergency travel needs with fast-track application support.
                 </p>
+
               </div>
             </div>
 
@@ -100,13 +98,12 @@ export default function BookSection() {
               </div>
               <div className="flex-1 text-center sm:text-left">
                 <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-2">
-                  Correction in Passport
+                  Passport Renewal & Corrections
                 </h3>
                 <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                  <span className="text-red-500 font-semibold">Oops, made a mistake?</span> No worries! 
-                  Fix it up with our passport correction service – making sure 
-                  your travel plans stay on the right track.
+                  Seamless renewal for expired passports and corrections for name changes, address updates, or damaged passport replacement.
                 </p>
+
               </div>
             </div>
           </div>

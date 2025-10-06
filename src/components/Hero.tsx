@@ -9,22 +9,21 @@ export default function Hero() {
           {/* Left Content */}
           <div className="space-y-6 lg:space-y-8 text-center lg:text-left order-1 lg:order-1">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-[55px] font-normal text-gray-900 leading-tight font-serif">
-              Protect Your Future Life,{' '}
-              <span className="block">Our Best Lawyers</span>
+              Get Your Passport Fast
+              <span className="block">Expert Guidance, Zero Hassles</span>
             </h1>
             
             <p className="text-base sm:text-lg text-gray-600 max-w-lg mx-auto lg:mx-0 leading-relaxed">
-              We know that every case is unique, and we approach each with meticulous attention 
-              and detail. Whether you&apos;re facing charges related DUI, drug offenses, assault.
+              Complete passport solutions for new applications, renewals, Tatkal services, and corrections. Professional assistance from document preparation to delivery with guaranteed approval and fastest processing times across India.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
               <button className="bg-[#027b7a] text-white px-6 sm:px-8 py-3 rounded-lg font-medium hover:bg-[#026968] transition-colors text-sm sm:text-base">
-                Request Case Evolution →
+                Apply for Passport Now
               </button>
-              <button className="border border-gray-300 text-gray-700 px-6 sm:px-8 py-3 rounded-lg font-medium hover:bg-gray-50 transition-colors text-sm sm:text-base">
+              {/* <button className="border border-gray-300 text-gray-700 px-6 sm:px-8 py-3 rounded-lg font-medium hover:bg-gray-50 transition-colors text-sm sm:text-base">
                 Learn More →
-              </button>
+              </button> */}
             </div>
           </div>
 
