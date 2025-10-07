@@ -13,73 +13,67 @@ type Branch = {
 
 const branches: Branch[] = [
   {
-    title: 'Branch Karnal',
+    title: 'Mumbai',
     addressLines: [
-      'Shop No. 6, Gaushala Rd, Janakpuri, Old Ramesh Nagar,',
-      'Ramesh Nagar, Karnal, Haryana 132114',
+      'Service Areas: Andheri, Bandra, Borivali, Thane,',
+      'Navi Mumbai, Goregaon'
     ],
-    phone: '086839 15114',
-    mapSrc:
-      'https://www.google.com/maps?q=Global+Passport+Advisor+Karnal&output=embed',
+    phone: '099900 12345',
+    mapSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609823277!2d72.74109995709657!3d19.082177513403905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin',
   },
   {
-    title: 'Branch Pitampura',
+    title: 'Delhi NCR',
     addressLines: [
-      'NP-156A, near MP Mall, MP Block, Block NP, Poorti Pitampura,',
-      'Pitampura, Delhi, 110034',
+      'Service Areas: New Delhi, Noida, Gurgaon,',
+      'Ghaziabad, Faridabad'
     ],
-    phone: '099900 08243',
-    mapSrc:
-      'https://www.google.com/maps?q=Global+Passport+Advisor+Pitampura&output=embed',
+    phone: '099900 23456',
+    mapSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.8397741267!2d77.04417565820312!3d28.527554299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin',
   },
   {
-    title: 'Branch Rohini',
+    title: 'Bangalore',
     addressLines: [
-      'Shop No, 393, opp. Ganesh MRI Diagnostic Lab, Pocket A2,',
-      'Pocket 2, Sector 8, Rohini, New Delhi, Delhi, 110085',
+      'Service Areas: Whitefield, Electronic City,',
+      'BTM Layout, Koramangala'
     ],
-    phone: '099924 44445',
-    mapSrc:
-      'https://www.google.com/maps?q=Global+Passport+Advisor+Rohini&output=embed',
+    phone: '099900 34567',
+    mapSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.84916296526!2d77.49085452148437!3d12.953945614117647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin',
   },
   {
-    title: 'Branch Noida',
+    title: 'Pune',
     addressLines: [
-      'Office 1026, 12th floor, Gaur City Mall, Greater Noida,',
-      'Sector 4, Uttar Pradesh 201301',
+      'Service Areas: Baner, Kothrud, Wakad,',
+      'Hinjewadi, Magarpatta'
     ],
-    phone: '099924 44445',
-    mapSrc:
-      'https://www.google.com/maps?q=Gaur+City+Mall+Noida&output=embed',
+    phone: '099900 45678',
+    mapSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121059.04711173041!2d73.79385252148437!3d18.52461405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin',
   },
   {
-    title: 'Branch Gurgaon',
+    title: 'Chennai',
     addressLines: [
-      'Shop No. 3, Mahender Market, Near MM Tower Passport Office,',
-      'Sector 18, Gurgaon, Haryana',
+      'Service Areas: T Nagar, Velachery, Anna Nagar,',
+      'OMR, Tambaram'
     ],
-    phone: '099924 44445',
-    mapSrc:
-      'https://www.google.com/maps?q=Passport+Seva+Kendra+Gurgaon&output=embed',
+    phone: '099900 56789',
+    mapSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.84916296526!2d80.04885452148437!3d13.082680414117647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin',
   },
   {
-    title: 'Branch Panipat',
+    title: 'Hyderabad',
     addressLines: [
-      'Adjoining Ambition Academy, near Prem Hospital and Aman Sweets,',
-      'Bishan Sarup Colony, Panipat, Haryana 132103',
+      'Service Areas: Gachibowli, Kondapur,',
+      'Banjara Hills, Secunderabad'
     ],
-    phone: '099900 09261',
-    mapSrc:
-      'https://www.google.com/maps?q=Global+Passport+Advisor+Panipat&output=embed',
+    phone: '099900 67890',
+    mapSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.84916296526!2d78.24885452148437!3d17.385044414117647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin',
   },
 ];
 
 export default function BranchesSection() {
   return (
-    <section className="py-12 sm:py-16">
+    <section className="py-12 sm:py-16 bg-[#ecf7ff]">
       <div className="mx-auto max-w-[1390px] px-4 sm:px-6">
         <h2 className="text-center text-2xl sm:text-3xl lg:text-[42px] xl:text-[48px] font-serif font-bold text-[#1f1f1f]">
-          Our <span className="text-[#ef4444]">Branches</span>
+          Our <span className="text-[#027b7a]">Service Locations</span>
         </h2>
 
         <div className="mt-8 sm:mt-10 grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 xl:grid-cols-3">
@@ -97,7 +91,7 @@ export default function BranchesSection() {
 
               <div className="mt-4 space-y-3 text-sm sm:text-[16px] text-[#374151]">
                 <div className="flex items-start gap-3">
-                  <FaLocationArrow className="mt-1 h-4 w-4 sm:h-5 sm:w-5 text-[#ef4444] flex-shrink-0" />
+                  <FaLocationArrow className="mt-1 h-4 w-4 sm:h-5 sm:w-5 text-[#027b7a] flex-shrink-0" />
                   <p className="leading-6 sm:leading-7">
                     {b.addressLines.map((line, i) => (
                       <span key={i} className="block">
@@ -107,7 +101,7 @@ export default function BranchesSection() {
                   </p>
                 </div>
                 <div className="flex items-center gap-3">
-                  <FaPhone className="h-4 w-4 sm:h-5 sm:w-5 text-[#ef4444] flex-shrink-0" />
+                  <FaPhone className="h-4 w-4 sm:h-5 sm:w-5 text-[#027b7a] flex-shrink-0" />
                   <a href={`tel:${b.phone.replace(/\s/g, '')}`} className="hover:underline">
                     Phone: {b.phone}
                   </a>

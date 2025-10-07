@@ -29,13 +29,13 @@ export default function TypesOfPassports() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-white">
+    <section className="py-12 sm:py-16 lg:py-20 bg-[#ecf7ff]">
       <div className="max-w-[1420px] mx-auto px-4 sm:px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
           {/* Left: Title + Accordion */}
           <div className="lg:col-span-5 order-2 lg:order-1">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-[#121518] mb-3 text-center lg:text-left">
-              Types Of <span className="text-[#ff5757]">Passports</span>
+              Types Of <span className="text-[#027b7a]">Passports</span>
             </h2>
             <p className="text-[#5f6570] mb-6 sm:mb-8 text-sm sm:text-base text-center lg:text-left">
               There are three types of Indian passports. These include-
@@ -48,7 +48,7 @@ export default function TypesOfPassports() {
                   <div
                     key={item.title}
                     className={`border rounded-xl transition-colors ${
-                      isOpen ? 'border-[#ffb3b3] bg-[#fff5f5]' : 'border-[#ffcccc] bg-white'
+                      isOpen ? 'border-[#027b7a]/30 bg-white' : 'border-gray-200 bg-white'
                     }`}
                   >
                     <button
@@ -56,8 +56,8 @@ export default function TypesOfPassports() {
                       className="w-full grid grid-cols-[1fr_auto] items-center text-left px-4 sm:px-6 h-12 sm:h-14"
                       onClick={() => setOpenIndex(isOpen ? null : idx)}
                     >
-                      <span className={`font-bold leading-none mt-2 text-sm sm:text-base ${isOpen ? 'text-[#ff5757]' : 'text-[#111827]'}`}>{item.title}</span>
-                      <span className={`inline-flex items-center mt-2 justify-center leading-none ${isOpen ? 'text-[#ff5757]' : 'text-[#ff5757]'} text-2xl sm:text-3xl lg:text-4xl font-semibold w-8 h-8 sm:w-10 sm:h-10`}>
+                      <span className={`font-bold leading-none mt-2 text-sm sm:text-base ${isOpen ? 'text-[#027b7a]' : 'text-[#111827]'}`}>{item.title}</span>
+                      <span className={`inline-flex items-center mt-2 justify-center leading-none ${isOpen ? 'text-[#027b7a]' : 'text-[#027b7a]'} text-2xl sm:text-3xl lg:text-4xl font-semibold w-8 h-8 sm:w-10 sm:h-10`}>
                         {isOpen ? '−' : '+'}
                       </span>
                     </button>
@@ -77,7 +77,7 @@ export default function TypesOfPassports() {
           </div>
 
           {/* Right: Combined passports image */}
-          <div className="lg:col-span-7 order-1 lg:order-2 flex items-center justify-center lg:justify-end mb-6 lg:mb-0">
+          <div className="lg:col-span-7 bg-[#027b7a] order-1 lg:order-2 flex items-center justify-center lg:justify-end mb-6 lg:mb-0">
             <Image
               src="/images/passport-right.webp"
               alt="Types of Indian Passports"

@@ -29,25 +29,25 @@ export default function Navbar() {
             <div className="flex items-center space-x-8">
               <Link 
                 href="/" 
-                className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
+                className="text-gray-700 hover:text-[#027b7a] px-3 py-2 text-sm font-medium transition-colors"
               >
                 Services
               </Link>
               <Link 
                 href="/pricing" 
-                className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
+                className="text-gray-700 hover:text-[#027b7a] px-3 py-2 text-sm font-medium transition-colors"
               >
                 About
               </Link>
               <Link 
                 href="/about" 
-                className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
+                className="text-gray-700 hover:text-[#027b7a] px-3 py-2 text-sm font-medium transition-colors"
               >
                 Blog
               </Link>
               <Link 
                 href="/resources" 
-                className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
+                className="text-gray-700 hover:text-[#027b7a] px-3 py-2 text-sm font-medium transition-colors"
               >
                 Contact Us
               </Link>
@@ -66,7 +66,7 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#027b7a]"
+              className="bg-[#ecf7ff] rounded-md p-2 inline-flex items-center justify-center text-gray-600 hover:text-[#027b7a] hover:bg-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#027b7a]"
             >
               <span className="sr-only">{isMobileMenuOpen ? 'Close main menu' : 'Open main menu'}</span>
               {isMobileMenuOpen ? (
@@ -85,7 +85,7 @@ export default function Navbar() {
 
       {/* Mobile Menu - Full Screen Overlay */}
       {isMobileMenuOpen && (
-        <div className="md:hidden fixed inset-0 bg-white z-50 flex flex-col">
+        <div className="md:hidden fixed inset-0 bg-[#ecf7ff] z-50 flex flex-col">
           {/* Header with logo and close button */}
           <div className="flex justify-between items-center px-4 py-4 border-b border-gray-200">
             <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
@@ -100,7 +100,7 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="bg-gray-100 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#027b7a]"
+              className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-600 hover:text-[#027b7a] hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#027b7a]"
             >
               <span className="sr-only">Close menu</span>
               <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -114,28 +114,28 @@ export default function Navbar() {
             <div className="space-y-2">
               <Link 
                 href="/" 
-                className="block px-4 py-4 text-gray-700 hover:text-gray-900 hover:bg-gray-50 text-xl font-medium transition-colors rounded-lg text-center"
+                className="block px-4 py-4 text-gray-700 hover:text-[#027b7a] hover:bg-white text-xl font-medium transition-colors rounded-lg text-center"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Services
               </Link>
               <Link 
                 href="/pricing" 
-                className="block px-4 py-4 text-gray-700 hover:text-gray-900 hover:bg-gray-50 text-xl font-medium transition-colors rounded-lg text-center"
+                className="block px-4 py-4 text-gray-700 hover:text-[#027b7a] hover:bg-white text-xl font-medium transition-colors rounded-lg text-center"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 About
               </Link>
               <Link 
                 href="/about" 
-                className="block px-4 py-4 text-gray-700 hover:text-gray-900 hover:bg-gray-50 text-xl font-medium transition-colors rounded-lg text-center"
+                className="block px-4 py-4 text-gray-700 hover:text-[#027b7a] hover:bg-white text-xl font-medium transition-colors rounded-lg text-center"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Blog
               </Link>
               <Link 
                 href="/resources" 
-                className="block px-4 py-4 text-gray-700 hover:text-gray-900 hover:bg-gray-50 text-xl font-medium transition-colors rounded-lg text-center"
+                className="block px-4 py-4 text-gray-700 hover:text-[#027b7a] hover:bg-white text-xl font-medium transition-colors rounded-lg text-center"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Contact Us

@@ -10,6 +10,7 @@ import BranchesSection from '@/components/BranchesSection';
 import FeedbackReviewComponent from '@/components/FeedbackReviewComponent';
 import Secrets from '@/components/Secrets';
 import Footer from '@/components/Footer';
+import FAQ from '@/components/FAQ';
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
       <BlogSection />
       <ConsultationSection />
       <BranchesSection />
-      <Secrets />
+      <FAQ />
       <Footer />
     
      

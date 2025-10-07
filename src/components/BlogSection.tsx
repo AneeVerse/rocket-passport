@@ -1,141 +1,100 @@
 "use client";
 
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
 
-type BlogItem = {
-  id: string;
-  date: string; // e.g. "18"
-  month: string; // e.g. "March"
-  img: string;
-  author: string;
-  category: string;
-  title: string;
-  excerpt: string;
-  href: string;
-};
-
-const BLOGS: BlogItem[] = [
+const blogPosts = [
   {
-    id: 'b1',
-    date: '18',
-    month: 'March',
-    img: '/images/blog/blog-img1.png',
-    author: 'Henry Nicolls',
-    category: 'Tax Lawyer',
-    title: 'Experience Matters: Your Tax Your & Resolution Starts Here',
-    excerpt:
-      "As a small business owner, you’re well aware of the numerous financial responsibilities.",
-    href: '#',
+    id: 1,
+    title: 'How to Apply for a Passport Online: A Step-by-Step Guide',
+    excerpt: 'Learn the complete process of applying for a passport online, including required documents, fees, and appointment booking.',
+    image: '/images/blog/blog-img1.png',
+    date: 'March 15, 2024',
+    readTime: '5 min read',
+    slug: 'how-to-apply-passport-online'
   },
   {
-    id: 'b2',
-    date: '16',
-    month: 'June',
-    img: '/images/blog/blog-img2.png',
-    author: 'Henry Nicolls',
-    category: 'Tax Lawyer',
-    title: 'Experience Matters: Your Tax Your & Resolution Starts Here',
-    excerpt:
-      "As a small business owner, you’re well aware of the numerous financial responsibilities.",
-    href: '#',
+    id: 2,
+    title: 'Documents Required for Passport Application in India',
+    excerpt: 'Complete list of documents needed for passport application, including address proof, identity proof, and other requirements.',
+    image: '/images/blog/blog-img2.png',
+    date: 'March 12, 2024',
+    readTime: '4 min read',
+    slug: 'documents-required-passport-application'
   },
   {
-    id: 'b3',
-    date: '12',
-    month: 'July',
-    img: '/images/blog/blog-img3.png',
-    author: 'Henry Nicolls',
-    category: 'Tax Lawyer',
-    title: 'Experience Matters: Your Tax Your & Resolution Starts Here',
-    excerpt:
-      "As a small business owner, you’re well aware of the numerous financial responsibilities.",
-    href: '#',
-  },
+    id: 3,
+    title: 'Passport Renewal Process: Everything You Need to Know',
+    excerpt: 'Comprehensive guide on passport renewal, including eligibility criteria, required documents, and processing time.',
+    image: '/images/blog/blog-img3.png',
+    date: 'March 10, 2024',
+    readTime: '6 min read',
+    slug: 'passport-renewal-process-guide'
+  }
 ];
-
-function DateBadge({ date, month }: { date: string; month: string }) {
-  return (
-    <div className="absolute left-3 top-3 sm:left-4 sm:top-4 lg:left-6 lg:top-6 z-10 flex h-12 w-12 sm:h-14 sm:w-14 lg:h-16 lg:w-16 flex-col items-center justify-center rounded-full bg-[#8c6bff] text-white shadow-md">
-      <span className="text-sm sm:text-lg lg:text-xl font-semibold leading-3 sm:leading-4">{date}</span>
-      <span className="text-[8px] sm:text-[9px] lg:text-[10px] leading-2 sm:leading-3">{month}</span>
-    </div>
-  );
-}
-
-function BlogCard({ post, index }: { post: BlogItem; index: number }) {
-  return (
-    <article className="group relative overflow-hidden rounded-xl sm:rounded-2xl bg-white shadow-sm ring-1 ring-black/5 transition-all duration-300 hover:shadow-xl">
-      {/* Media */}
-      <div className="relative h-[200px] sm:h-[240px] lg:h-[280px] overflow-hidden">
-        <DateBadge date={post.date} month={post.month} />
-        <Image
-          src={post.img}
-          alt={post.title}
-          fill
-          sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-          className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
-          priority={index === 0}
-        />
-      </div>
-
-      {/* Content footer */}
-      <div className="relative z-10 -mt-1 sm:-mt-2 rounded-b-xl sm:rounded-b-2xl px-4 sm:px-5 lg:px-6 pb-4 sm:pb-5 lg:pb-6 pt-4 sm:pt-5 lg:pt-6 transition-colors duration-500 ease-in-out bg-white text-gray-900 group-hover:bg-[#5a3df0] group-hover:text-white">
-        {/* Meta */}
-        <div className="mb-3 sm:mb-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 lg:gap-6 text-xs sm:text-sm">
-          <div className="flex items-center gap-2 opacity-80">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" className="transition-colors duration-300 group-hover:fill-white/90 sm:w-4 sm:h-4"><path d="M12 12c2.209 0 4-1.791 4-4s-1.791-4-4-4-4 1.791-4 4 1.791 4 4 4Zm0 2c-3.313 0-6 2.239-6 5v1h12v-1c0-2.761-2.687-5-6-5Z" fill="currentColor"/></svg>
-            <span className="text-xs sm:text-sm">{post.author}</span>
-          </div>
-          <div className="flex items-center gap-2 opacity-80">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" className="transition-colors duration-300 group-hover:fill-white/90 sm:w-4 sm:h-4"><path d="M12 2 2 7l10 5 10-5-10-5Zm0 20-10-5V9l10 5 10-5v8l-10 5Z" fill="currentColor"/></svg>
-            <span className="text-xs sm:text-sm">{post.category}</span>
-          </div>
-        </div>
-
-        {/* Title */}
-        <h3 className="mb-2 sm:mb-3 text-lg sm:text-xl lg:text-2xl font-semibold leading-snug line-clamp-2">
-          {post.title}
-        </h3>
-
-        {/* Excerpt */}
-        <p className="mb-4 sm:mb-5 text-sm sm:text-[15px] leading-5 sm:leading-6 opacity-90 line-clamp-2 sm:line-clamp-3">
-          {post.excerpt}
-        </p>
-
-        {/* Read more */}
-        <Link
-          href={post.href}
-          className="inline-flex items-center gap-2 font-medium text-[#5a3df0] transition-colors group-hover:text-white text-sm sm:text-base"
-        >
-          Read More
-          <span className="inline-block transition-transform duration-300 group-hover:translate-x-0.5">→</span>
-        </Link>
-      </div>
-    </article>
-  );
-}
 
 export default function BlogSection() {
   return (
-    <section className="bg-[#f6f3ff] py-12 sm:py-16">
-      <div className="mx-auto max-w-[1350px] px-4 sm:px-6">
-        {/* Heading */}
-        <div className="mb-8 sm:mb-10 text-center">
-          <span className="inline-block rounded-full bg-white px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium text-[#5a3df0] shadow-sm">
-            Our Blogs
-          </span>
-          <h2 className="mt-3 sm:mt-4 text-2xl sm:text-3xl lg:text-4xl font-semibold text-[#1f1634] leading-tight">
-            Our Latest Blog Posts
+    <section className="py-12 sm:py-16 bg-[#ecf7ff]">
+      <div className="mx-auto max-w-[1390px] px-4 sm:px-6">
+        <div className="text-center">
+          <h2 className="text-2xl sm:text-3xl lg:text-[42px] xl:text-[48px] font-serif font-bold text-[#1f1f1f]">
+            Latest <span className="text-[#027b7a]">Blog Posts</span>
           </h2>
+          <p className="mt-4 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+            Stay updated with the latest passport and visa information, tips, and guides
+          </p>
         </div>
 
-        {/* Grid */}
-        <div className="grid gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {BLOGS.map((post, idx) => (
-            <BlogCard key={post.id} post={post} index={idx} />
+        <div className="mt-8 sm:mt-12 grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {blogPosts.map((post) => (
+            <article key={post.id} className="bg-white rounded-xl shadow-sm ring-1 ring-gray-100 overflow-hidden hover:shadow-md transition-shadow duration-300">
+              <div className="relative h-48 sm:h-52">
+                <Image
+                  src={post.image}
+                  alt={post.title}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              
+              <div className="p-4 sm:p-6">
+                <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
+                  <time dateTime={post.date}>{post.date}</time>
+                  <span>•</span>
+                  <span>{post.readTime}</span>
+                </div>
+                
+                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 line-clamp-2">
+                  {post.title}
+                </h3>
+                
+                <p className="text-gray-600 text-sm sm:text-base mb-4 line-clamp-3">
+                  {post.excerpt}
+                </p>
+                
+                <Link
+                  href={`/blog/${post.slug}`}
+                  className="inline-flex items-center text-[#027b7a] hover:text-[#026968] font-medium text-sm sm:text-base transition-colors duration-200"
+                >
+                  Read More
+                  <svg className="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+            </article>
           ))}
+        </div>
+
+        <div className="mt-8 sm:mt-12 text-center">
+          <Link
+            href="/blog"
+            className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#027b7a] hover:bg-[#026968] transition-colors duration-200"
+          >
+            View All Posts
+          </Link>
         </div>
       </div>
     </section>
