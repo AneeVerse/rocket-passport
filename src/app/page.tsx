@@ -8,7 +8,6 @@ import BlogSection from '@/components/BlogSection';
 import ConsultationSection from '@/components/ConsultationSection';
 import BranchesSection from '@/components/BranchesSection';
 import FeedbackReviewComponent from '@/components/FeedbackReviewComponent';
-import Secrets from '@/components/Secrets';
 import Footer from '@/components/Footer';
 import FAQ from '@/components/FAQ';
 

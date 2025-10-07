@@ -13,7 +13,7 @@ export default function AboutUs() {
             Why Choose Our <span className="text-[#027b7a]">Passport Services</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            With over 20 years of experience and 100,000+ successful applications, we are India's most trusted passport consultancy. Our expert team ensures your application is completed correctly the first time with guaranteed approval and transparent pricing.
+            With over 20 years of experience and 100,000+ successful applications, we are India&apos;s most trusted passport consultancy. Our expert team ensures your application is completed correctly the first time with guaranteed approval and transparent pricing.
           </p>
         </div>
 
