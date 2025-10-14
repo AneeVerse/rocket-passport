@@ -1,34 +1,5 @@
 import Image from 'next/image';
-import { Calendar, Users, Target, Clock, FileCheck, Zap, DollarSign, HeadphonesIcon, ArrowRight } from 'lucide-react';
-
-type FeatureItem = {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-};
-
-const features: FeatureItem[] = [
-  {
-    icon: <FileCheck className="w-6 h-6" />,
-    title: 'Expert Documentation & Form Filling',
-    description: 'Our legal experts handle all paperwork including affidavits, annexures, and government forms. We ensure accurate documentation to prevent rejections and delays with complete verification before submission.',
-  },
-  {
-    icon: <Zap className="w-6 h-6" />,
-    title: 'Fastest Processing Times',
-    description: 'Get your passport in record time - regular applications in 15-30 days, Tatkal in 3-5 days. We prioritize your application with appointment booking, tracking, and direct coordination with passport offices.',
-  },
-  {
-    icon: <DollarSign className="w-6 h-6" />,
-    title: '100% Transparent Pricing',
-    description: 'No hidden charges or surprise fees. Clear upfront pricing with detailed breakdown of government fees and service charges. Pay only after successful application submission with money-back guarantee.',
-  },
-  {
-    icon: <HeadphonesIcon className="w-6 h-6" />,
-    title: 'End-to-End Support & Guidance',
-    description: 'Complete handholding from document collection to passport delivery. Our consultants guide you through every step with regular updates, police verification support, and doorstep document pickup/delivery services.',
-  },
-];
+import { Calendar, Users, Target, FileCheck, Zap, DollarSign, HeadphonesIcon, ArrowRight } from 'lucide-react';
 
 export default function AboutUs() {
   return (
@@ -46,7 +17,7 @@ export default function AboutUs() {
               <span className="text-[#027b7a]">Passport Services</span>
             </h2>
             <p className="text-sm sm:text-base text-[#5f6570] leading-relaxed mb-6 sm:mb-8 max-w-prose mx-auto lg:mx-0">
-              With over 20 years of experience and 100,000+ successful applications, we are India's most trusted passport consultancy. Our expert team ensures your application is completed correctly the first time.
+              With over 20 years of experience and 100,000+ successful applications, we are India&apos;s most trusted passport consultancy. Our expert team ensures your application is completed correctly the first time.
             </p>
 
             {/* Statistics Cards */}

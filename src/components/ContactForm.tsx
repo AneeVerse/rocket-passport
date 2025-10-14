@@ -54,7 +54,7 @@ export default function ContactForm() {
         setSubmitStatus('error');
         setStatusMessage(result.message || 'Failed to send message. Please try again.');
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus('error');
       setStatusMessage('Network error. Please check your connection and try again.');
     } finally {
