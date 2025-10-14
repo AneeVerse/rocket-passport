@@ -41,7 +41,15 @@ const Secrets = () => {
             The secrets behind our success
           </h2>
           
-          <button className="bg-black text-white font-medium px-6 py-3 rounded-full hover:bg-gray-800 transition-colors duration-200 text-sm whitespace-nowrap self-start">
+          <button 
+            onClick={() => {
+              const element = document.getElementById('contact');
+              if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
+            className="bg-black text-white font-medium px-6 py-3 rounded-full hover:bg-gray-800 transition-colors duration-200 text-sm whitespace-nowrap self-start"
+          >
             Learn More
           </button>
         </div>

@@ -50,14 +50,14 @@ export default function Navbar() {
               >
                 About
               </button>
-              <button 
+              {/* <button 
                 onClick={() => scrollToSection('blog')}
                 className="text-gray-700 hover:text-[#dc2626] px-3 py-2 text-sm font-medium transition-colors"
               >
                 Blog
-              </button>
+              </button> */}
               <button 
-                onClick={() => scrollToSection('hero')}
+                onClick={() => scrollToSection('contact')}
                 className="text-gray-700 hover:text-[#dc2626] px-3 py-2 text-sm font-medium transition-colors"
               >
                 Contact Us

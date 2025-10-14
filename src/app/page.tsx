@@ -1,3 +1,5 @@
+"use client";
+import { useState, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import BookSection from '@/components/BookSection';
@@ -8,11 +10,23 @@ import BlogSection from '@/components/BlogSection';
 import ConsultationSection from '@/components/ConsultationSection';
 import BranchesSection from '@/components/BranchesSection';
 import FeedbackReviewComponent from '@/components/FeedbackReviewComponent';
+import Contact from '@/components/Contact.jsx';
 import Footer from '@/components/Footer.jsx';
 import FAQ from '@/components/FAQ';
 import FloatingActionButton from '@/components/FloatingActionButton';
+import PopupContactForm from '@/components/PopupContactForm';
 
 export default function Home() {
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowPopup(true);
+    }, 5000); // Show popup after 5 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="min-h-screen">
       <Navbar />
@@ -26,9 +40,11 @@ export default function Home() {
 
       <ConsultationSection />
       <BranchesSection />
+      <Contact />
       <FAQ />
       <Footer />
       <FloatingActionButton />
+      <PopupContactForm show={showPopup} onClose={() => setShowPopup(false)} />
     </div>
   );
 }

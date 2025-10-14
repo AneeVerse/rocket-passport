@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import { FaWhatsapp } from "react-icons/fa";
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -119,13 +120,24 @@ const FAQ = () => {
                 Join thousands of satisfied customers who have successfully obtained their passports with our expert assistance and complete documentation support.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="inline-flex items-center justify-center bg-white text-[#dc2626] font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-1">
-                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-                  </svg>
-                  Start Application
-                </button>
-                <button className="inline-flex items-center justify-center bg-transparent text-white font-medium px-8 py-4 rounded-lg border-2 border-white/30 hover:border-white hover:bg-white/10 transition-all duration-200">
+                <a 
+                  href="https://wa.me/+917021388625" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center bg-white text-[#dc2626] font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-1"
+                >
+                  <FaWhatsapp className="w-5 h-5 mr-2" />
+                  Whatsapp
+                </a>
+                <button 
+                  onClick={() => {
+                    const element = document.getElementById('contact');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                  className="inline-flex items-center justify-center bg-transparent text-white font-medium px-8 py-4 rounded-lg border-2 border-white/30 hover:border-white hover:bg-white/10 transition-all duration-200"
+                >
                   <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>

@@ -126,7 +126,15 @@ export default function BookSection() {
 
           {/* CTA Button */}
           <div className="text-center -mb-17 mt-8">
-            <button className="relative z-20 bg-[#dc2626] hover:bg-[#b91c1c] hover:shadow-lg hover:scale-105 active:scale-95 text-white font-semibold py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 uppercase tracking-wide text-sm sm:text-base cursor-pointer">
+            <button 
+              onClick={() => {
+                const element = document.getElementById('contact');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+              className="relative z-20 bg-[#dc2626] hover:bg-[#b91c1c] hover:shadow-lg hover:scale-105 active:scale-95 text-white font-semibold py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 uppercase tracking-wide text-sm sm:text-base cursor-pointer"
+            >
               BOOK A CONSULTATION
             </button>
           </div>

@@ -18,7 +18,15 @@ export default function Hero() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
-              <button className="bg-[#dc2626] text-white px-6 sm:px-8 py-3 rounded-lg font-medium hover:bg-[#b91c1c] transition-colors text-sm sm:text-base">
+              <button 
+                onClick={() => {
+                  const element = document.getElementById('contact');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                className="bg-[#dc2626] text-white px-6 sm:px-8 py-3 rounded-lg font-medium hover:bg-[#b91c1c] transition-colors text-sm sm:text-base"
+              >
                 Apply for Passport Now
               </button>
               {/* <button className="border border-gray-300 text-gray-700 px-6 sm:px-8 py-3 rounded-lg font-medium hover:bg-gray-50 transition-colors text-sm sm:text-base">

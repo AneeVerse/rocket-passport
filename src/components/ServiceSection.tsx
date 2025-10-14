@@ -53,7 +53,15 @@ export default function ServiceSection() {
             <p className="text-sm sm:text-base text-[#5f6570] leading-relaxed mb-6 sm:mb-8 max-w-prose mx-auto lg:mx-0">
               From fresh passport applications to urgent Tatkal services, we handle every type of passport requirement with expert guidance and guaranteed results.
             </p>
-             <button className="inline-flex items-center gap-2 bg-[#dc2626] hover:bg-[#b91c1c] text-white font-semibold py-3 px-6 rounded-lg transition-colors w-fit mx-auto lg:mx-0 text-sm sm:text-base">
+             <button 
+               onClick={() => {
+                 const element = document.getElementById('contact');
+                 if (element) {
+                   element.scrollIntoView({ behavior: 'smooth' });
+                 }
+               }}
+               className="inline-flex items-center gap-2 bg-[#dc2626] hover:bg-[#b91c1c] text-white font-semibold py-3 px-6 rounded-lg transition-colors w-fit mx-auto lg:mx-0 text-sm sm:text-base"
+             >
                About Our Service
                <Image src="/images/service/arrow_right.svg" alt="arrow" width={18} height={18} className="w-4 h-4 sm:w-[18px] sm:h-[18px]" />
              </button>
@@ -65,7 +73,13 @@ export default function ServiceSection() {
               return (
                 <div
                   key={`${service.title}-${idx}`}
-                  className="group relative rounded-2xl p-5 sm:p-6 lg:p-7 ring-1 ring-gray-200 bg-white text-[#101010] transition-colors duration-200 hover:bg-[#dc2626] hover:text-white shadow-sm min-h-[180px] sm:min-h-[200px]"
+                  onClick={() => {
+                    const element = document.getElementById('contact');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                  className="group relative rounded-2xl p-5 sm:p-6 lg:p-7 ring-1 ring-gray-200 bg-white text-[#101010] transition-colors duration-200 hover:bg-[#dc2626] hover:text-white shadow-sm min-h-[180px] sm:min-h-[200px] cursor-pointer"
                 >
                   {/* cut-out notch top-right - hidden on mobile for cleaner look */}
                   <div className="hidden sm:block pointer-events-none before:content-[''] before:absolute before:-top-4 before:-right-4 before:w-18 before:h-18 before:bg-[#fef2f2] before:rounded-full"></div>

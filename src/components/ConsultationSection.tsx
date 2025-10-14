@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function ConsultationSection() {
   return (
-    <section id="contact" className="py-12 sm:py-16">
+    <section id="consultation" className="py-12 sm:py-16">
       <div className="mx-auto max-w-[1350px] px-4 sm:px-6">
         <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#dc2626] via-[#b91c1c] to-[#991b1b] p-6 sm:p-8 lg:p-12 text-white shadow-[0_20px_50px_-10px_rgba(220,38,38,0.4)]">
           {/* Background Pattern */}
@@ -17,7 +17,7 @@ export default function ConsultationSection() {
             {/* Left Content */}
             <div className="text-center lg:text-left space-y-6">
               <div className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-sm font-medium backdrop-blur-sm">
-                <span className="h-2 w-2 rounded-full bg-green-400"></span>
+            
                 Free Consultation Available
               </div>
               
@@ -32,14 +32,30 @@ export default function ConsultationSection() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
-                <button className="group inline-flex items-center justify-center gap-3 rounded-xl bg-white px-6 py-3 text-[#dc2626] font-semibold shadow-lg transition-all hover:shadow-xl hover:scale-105 active:scale-95">
+                <button 
+                  onClick={() => {
+                    const element = document.getElementById('contact');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                  className="group inline-flex items-center justify-center gap-3 rounded-xl bg-white px-6 py-3 text-[#dc2626] font-semibold shadow-lg transition-all hover:shadow-xl hover:scale-105 active:scale-95"
+                >
                   <span>Get Free Consultation</span>
                   <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </button>
                 
-                <button className="inline-flex items-center justify-center gap-3 rounded-xl border-2 border-white/30 px-6 py-3 text-white font-semibold backdrop-blur-sm transition-all hover:bg-white/10 hover:border-white/50">
+                <button 
+                  onClick={() => {
+                    const element = document.getElementById('contact');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                  className="inline-flex items-center justify-center gap-3 rounded-xl border-2 border-white/30 px-6 py-3 text-white font-semibold backdrop-blur-sm transition-all hover:bg-white/10 hover:border-white/50"
+                >
                   <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>

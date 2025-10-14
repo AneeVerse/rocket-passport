@@ -13,8 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Stardom - Legal Services",
-  description: "Protect Your Future Life, Our Best Lawyers. Expert legal representation for DUI, drug offenses, assault and more.",
+  title: "Tatkal Passport - Fast Passport Services",
+  description: "Get your passport quickly with our expert tatkal passport services. Fast, reliable, and hassle-free passport application assistance.",
+  icons: {
+    icon: "/images/nav-logo.png",
+  },
 };
 
 export default function RootLayout({
