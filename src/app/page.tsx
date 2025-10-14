@@ -10,6 +10,7 @@ import BranchesSection from '@/components/BranchesSection';
 import FeedbackReviewComponent from '@/components/FeedbackReviewComponent';
 import Footer from '@/components/Footer.jsx';
 import FAQ from '@/components/FAQ';
+import FloatingActionButton from '@/components/FloatingActionButton';
 
 export default function Home() {
   return (
@@ -27,9 +28,7 @@ export default function Home() {
       <BranchesSection />
       <FAQ />
       <Footer />
-    
-     
-     
+      <FloatingActionButton />
     </div>
   );
 }
