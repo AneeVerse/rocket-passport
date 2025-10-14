@@ -93,7 +93,7 @@ export default function ContactForm() {
               onChange={handleChange}
               placeholder="First Name"
               required
-              className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#027b7a] focus:border-transparent text-sm text-gray-900 placeholder-gray-500"
+              className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#dc2626] focus:border-transparent text-sm text-gray-900 placeholder-gray-500"
             />
           </div>
           <div>
@@ -104,7 +104,7 @@ export default function ContactForm() {
               onChange={handleChange}
               placeholder="Last Name"
               required
-              className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#027b7a] focus:border-transparent text-sm text-gray-900 placeholder-gray-500"
+              className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#dc2626] focus:border-transparent text-sm text-gray-900 placeholder-gray-500"
             />
           </div>
         </div>
@@ -118,7 +118,7 @@ export default function ContactForm() {
               onChange={handleChange}
               placeholder="Email"
               required
-              className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#027b7a] focus:border-transparent text-sm text-gray-900 placeholder-gray-500"
+              className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#dc2626] focus:border-transparent text-sm text-gray-900 placeholder-gray-500"
             />
           </div>
           <div>
@@ -128,7 +128,7 @@ export default function ContactForm() {
               value={formData.phoneNumber}
               onChange={handleChange}
               placeholder="Phone"
-              className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#027b7a] focus:border-transparent text-sm text-gray-900 placeholder-gray-500"
+              className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#dc2626] focus:border-transparent text-sm text-gray-900 placeholder-gray-500"
             />
           </div>
         </div>
@@ -140,7 +140,7 @@ export default function ContactForm() {
             value={formData.subject}
             onChange={handleChange}
             placeholder="Subject"
-            className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#027b7a] focus:border-transparent text-sm text-gray-900 placeholder-gray-500"
+            className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#dc2626] focus:border-transparent text-sm text-gray-900 placeholder-gray-500"
           />
         </div>
         
@@ -151,14 +151,14 @@ export default function ContactForm() {
             onChange={handleChange}
             placeholder="Message"
             rows={3}
-            className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#027b7a] focus:border-transparent text-sm resize-none text-gray-900 placeholder-gray-500"
+            className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#dc2626] focus:border-transparent text-sm resize-none text-gray-900 placeholder-gray-500"
           ></textarea>
         </div>
         
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-[#027b7a] text-white py-3 sm:py-2 px-4 rounded-md hover:bg-[#026968] transition-colors text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full bg-[#dc2626] text-white py-3 sm:py-2 px-4 rounded-md hover:bg-[#b91c1c] transition-colors text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {isSubmitting ? 'Sending...' : 'Send Now →'}
         </button>

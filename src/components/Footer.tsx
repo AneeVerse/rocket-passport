@@ -15,7 +15,7 @@ export default function Footer() {
     <footer className="w-full text-white pt-12 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Gradient Background Container */}
-        <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#027b7a] via-[#026968] to-[#025756] p-6 sm:p-8 lg:p-12 shadow-[0_20px_50px_-10px_rgba(2,123,122,0.4)]">
+        <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#dc2626] via-[#b91c1c] to-[#991b1b] p-6 sm:p-8 lg:p-12 shadow-[0_20px_50px_-10px_rgba(220,38,38,0.4)]">
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-10">
             <div className="absolute -right-20 -top-20 h-40 w-40 rounded-full bg-white/20 blur-3xl"></div>
@@ -55,19 +55,19 @@ export default function Footer() {
                 <div className="space-y-3">
                   <button 
                     onClick={() => scrollToSection('hero')}
-                    className="text-gray-300 hover:text-white transition-colors duration-200 text-sm py-2 border-l-2 border-gray-700 hover:border-[#ecf7ff] pl-3 hover:pl-4 transition-all duration-200 block text-left w-full"
+                    className="text-gray-300 hover:text-white transition-colors duration-200 text-sm py-2 border-l-2 border-gray-700 hover:border-[#dc2626] pl-3 hover:pl-4 transition-all duration-200 block text-left w-full"
                   >
                     Home
                   </button>
                   <button 
                     onClick={() => scrollToSection('about')}
-                    className="text-gray-300 hover:text-white transition-colors duration-200 text-sm py-2 border-l-2 border-gray-700 hover:border-[#ecf7ff] pl-3 hover:pl-4 transition-all duration-200 block text-left w-full"
+                    className="text-gray-300 hover:text-white transition-colors duration-200 text-sm py-2 border-l-2 border-gray-700 hover:border-[#dc2626] pl-3 hover:pl-4 transition-all duration-200 block text-left w-full"
                   >
                     About
                   </button>
                   <button 
                     onClick={() => scrollToSection('services')}
-                    className="text-gray-300 hover:text-white transition-colors duration-200 text-sm py-2 border-l-2 border-gray-700 hover:border-[#ecf7ff] pl-3 hover:pl-4 transition-all duration-200 block text-left w-full"
+                    className="text-gray-300 hover:text-white transition-colors duration-200 text-sm py-2 border-l-2 border-gray-700 hover:border-[#dc2626] pl-3 hover:pl-4 transition-all duration-200 block text-left w-full"
                   >
                     Services
                   </button>
@@ -77,30 +77,30 @@ export default function Footer() {
                 <div className="space-y-3">
                   <button 
                     onClick={() => scrollToSection('contact')}
-                    className="text-gray-300 hover:text-white transition-colors duration-200 text-sm py-2 border-l-2 border-gray-700 hover:border-[#ecf7ff] pl-3 hover:pl-4 transition-all duration-200 block text-left w-full"
+                    className="text-gray-300 hover:text-white transition-colors duration-200 text-sm py-2 border-l-2 border-gray-700 hover:border-[#dc2626] pl-3 hover:pl-4 transition-all duration-200 block text-left w-full"
                   >
                     Contact
                   </button>
                   <button 
                     onClick={() => scrollToSection('blog')}
-                    className="text-gray-300 hover:text-white transition-colors duration-200 text-sm py-2 border-l-2 border-gray-700 hover:border-[#ecf7ff] pl-3 hover:pl-4 transition-all duration-200 block text-left w-full"
+                    className="text-gray-300 hover:text-white transition-colors duration-200 text-sm py-2 border-l-2 border-gray-700 hover:border-[#dc2626] pl-3 hover:pl-4 transition-all duration-200 block text-left w-full"
                   >
                     Blog
                   </button>
-                  <Link href="/#upcoming-events" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm py-2 border-l-2 border-gray-700 hover:border-[#ecf7ff] pl-3 hover:pl-4 transition-all duration-200 block">
+                  <Link href="/#upcoming-events" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm py-2 border-l-2 border-gray-700 hover:border-[#dc2626] pl-3 hover:pl-4 transition-all duration-200 block">
                     FAQ
                   </Link>
                 </div>
                 
                 {/* Column 3 */}
                 <div className="space-y-3">
-                  <Link href="/#epic-destinations-section" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm py-2 border-l-2 border-gray-700 hover:border-[#ecf7ff] pl-3 hover:pl-4 transition-all duration-200 block">
+                  <Link href="/#epic-destinations-section" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm py-2 border-l-2 border-gray-700 hover:border-[#dc2626] pl-3 hover:pl-4 transition-all duration-200 block">
                     Experiences
                   </Link>
-                  <Link href="/#reviews-section" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm py-2 border-l-2 border-gray-700 hover:border-[#ecf7ff] pl-3 hover:pl-4 transition-all duration-200 block">
+                  <Link href="/#reviews-section" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm py-2 border-l-2 border-gray-700 hover:border-[#dc2626] pl-3 hover:pl-4 transition-all duration-200 block">
                     Testimonials
                   </Link>
-                  <Link href="/#coaches-section" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm py-2 border-l-2 border-gray-700 hover:border-[#ecf7ff] pl-3 hover:pl-4 transition-all duration-200 block">
+                  <Link href="/#coaches-section" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm py-2 border-l-2 border-gray-700 hover:border-[#dc2626] pl-3 hover:pl-4 transition-all duration-200 block">
                     Team
                   </Link>
                 </div>
@@ -180,7 +180,7 @@ export default function Footer() {
                   alt="Aneeverse"
                   width={16}
                   height={16}
-                  className="brightness-0 invert opacity-90 group-hover:opacity-100 transition-opacity duration-200"
+                  className="brightness-0 invert "
                 />
               </a>
             </div>

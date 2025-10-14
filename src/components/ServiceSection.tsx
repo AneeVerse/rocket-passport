@@ -38,12 +38,12 @@ const services: ServiceItem[] = [
 
 export default function ServiceSection() {
   return (
-    <section id="services" className="py-16 sm:py-20 lg:py-24 bg-gray-50">
+    <section id="services" className="py-16 bg-[#fef2f2] sm:py-20 lg:py-24 ">
       <div className="max-w-[1420px] mx-auto px-4 sm:px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
           {/* Left intro column */}
           <div className="lg:col-span-4 flex flex-col justify-center text-center lg:text-left">
-            <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium mb-6 bg-white text-[#027b7a] border border-[#027b7a]/20 w-fit mx-auto lg:mx-0">
+            <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium mb-6 bg-white text-[#dc2626] border border-[#dc2626]/20 w-fit mx-auto lg:mx-0">
               SERVICES
             </div>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-[#1f1f1f] leading-tight mb-5">
@@ -53,7 +53,7 @@ export default function ServiceSection() {
             <p className="text-sm sm:text-base text-[#5f6570] leading-relaxed mb-6 sm:mb-8 max-w-prose mx-auto lg:mx-0">
               From fresh passport applications to urgent Tatkal services, we handle every type of passport requirement with expert guidance and guaranteed results.
             </p>
-             <button className="inline-flex items-center gap-2 bg-[#027b7a] hover:bg-[#026968] text-white font-semibold py-3 px-6 rounded-lg transition-colors w-fit mx-auto lg:mx-0 text-sm sm:text-base">
+             <button className="inline-flex items-center gap-2 bg-[#dc2626] hover:bg-[#b91c1c] text-white font-semibold py-3 px-6 rounded-lg transition-colors w-fit mx-auto lg:mx-0 text-sm sm:text-base">
                About Our Service
                <Image src="/images/service/arrow_right.svg" alt="arrow" width={18} height={18} className="w-4 h-4 sm:w-[18px] sm:h-[18px]" />
              </button>
@@ -65,20 +65,20 @@ export default function ServiceSection() {
               return (
                 <div
                   key={`${service.title}-${idx}`}
-                  className="group relative rounded-2xl p-5 sm:p-6 lg:p-7 ring-1 ring-gray-200 bg-white text-[#101010] transition-colors duration-200 hover:bg-[#027b7a] hover:text-white shadow-sm min-h-[180px] sm:min-h-[200px]"
+                  className="group relative rounded-2xl p-5 sm:p-6 lg:p-7 ring-1 ring-gray-200 bg-white text-[#101010] transition-colors duration-200 hover:bg-[#dc2626] hover:text-white shadow-sm min-h-[180px] sm:min-h-[200px]"
                 >
                   {/* cut-out notch top-right - hidden on mobile for cleaner look */}
-                  <div className="hidden sm:block pointer-events-none before:content-[''] before:absolute before:-top-4 before:-right-4 before:w-18 before:h-18 before:bg-[#ecf7ff] before:rounded-full"></div>
+                  <div className="hidden sm:block pointer-events-none before:content-[''] before:absolute before:-top-4 before:-right-4 before:w-18 before:h-18 before:bg-[#fef2f2] before:rounded-full"></div>
 
                   {/* top-right external arrow in soft bubble - smaller on mobile */}
-                  <div className="absolute -top-2 -right-2 sm:-top-3 sm:-right-3 rounded-full p-3 sm:p-5 bg-white ring-1 ring-gray-200 shadow transition-colors duration-200 group-hover:bg-[#027b7a] group-hover:ring-white/30">
+                  <div className="absolute -top-2 -right-2 sm:-top-3 sm:-right-3 rounded-full p-3 sm:p-5 bg-white ring-1 ring-gray-200 shadow transition-colors duration-200 group-hover:bg-[#dc2626] group-hover:ring-white/30">
                     <Image src="/images/service/arrow_right.svg" alt="open" width={22} height={22} className="transition group-hover:brightness-0 group-hover:invert w-3 h-3 sm:w-5 sm:h-5" />
                   </div>
 
                   {/* icon bubble */}
                   <div className="mb-3 sm:mb-4">
-                    <div className="inline-flex items-center justify-center rounded-full w-12 h-12 sm:w-14 sm:h-14 bg-[#ecf7ff] transition-colors duration-200 group-hover:bg-white/20">
-                      <div className="transition group-hover:text-white text-[#027b7a]">
+                    <div className="inline-flex items-center justify-center rounded-full w-12 h-12 sm:w-14 sm:h-14 bg-[#fef2f2] transition-colors duration-200 group-hover:bg-white/20">
+                      <div className="transition group-hover:text-white text-[#dc2626]">
                         {service.icon}
                       </div>
                     </div>

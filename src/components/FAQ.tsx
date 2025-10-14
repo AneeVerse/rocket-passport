@@ -33,8 +33,8 @@ const FAQ = () => {
       <div className="max-w-[1450px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#027b7a]/20 to-[#027b7a]/10 rounded-2xl mb-6">
-            <svg className="w-8 h-8 text-[#027b7a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#dc2626]/20 to-[#dc2626]/10 rounded-2xl mb-6">
+            <svg className="w-8 h-8 text-[#dc2626]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
@@ -52,18 +52,18 @@ const FAQ = () => {
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl border-2 border-gray-200 hover:border-[#027b7a]/30 transition-all duration-300 shadow-sm hover:shadow-lg"
+                className="bg-white rounded-xl border-2 border-gray-200 hover:border-[#dc2626]/30 transition-all duration-300 shadow-sm hover:shadow-lg"
               >
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-[#027b7a]/20 rounded-xl"
+                  className="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-[#dc2626]/20 rounded-xl"
                 >
                   <div className="flex items-center justify-between">
                     <h3 className="text-lg font-bold text-black pr-4 leading-tight">
                       {faq.question}
                     </h3>
                     <div className={`flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 transition-all duration-300 ${
-                      openIndex === index ? 'bg-[#027b7a] rotate-180' : 'hover:bg-gray-200'
+                      openIndex === index ? 'bg-[#dc2626] rotate-180' : 'hover:bg-gray-200'
                     }`}>
                       <svg 
                         className={`w-5 h-5 transition-colors duration-300 ${
@@ -110,7 +110,7 @@ const FAQ = () => {
 
         {/* Bottom CTA */}
         <div className="text-center mt-20">
-          <div className="bg-gradient-to-r from-[#027b7a] via-[#025f5e] to-[#027b7a] rounded-2xl p-8 lg:p-12 text-white shadow-2xl">
+          <div className="bg-gradient-to-r from-[#dc2626] via-[#b91c1c] to-[#dc2626] rounded-2xl p-8 lg:p-12 text-white shadow-2xl">
             <div className="max-w-3xl mx-auto">
               <h3 className="text-2xl lg:text-3xl font-bold mb-4">
                 Ready to Start Your Passport Application?
@@ -119,7 +119,7 @@ const FAQ = () => {
                 Join thousands of satisfied customers who have successfully obtained their passports with our expert assistance and complete documentation support.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="inline-flex items-center justify-center bg-white text-[#027b7a] font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-1">
+                <button className="inline-flex items-center justify-center bg-white text-[#dc2626] font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-1">
                   <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                   </svg>

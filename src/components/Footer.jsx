@@ -35,7 +35,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="relative text-white py-16 px-3 sm:px-6 bg-gradient-to-br from-[#027b7a] via-[#026968] to-[#025756] overflow-x-hidden">
+    <footer className="relative text-white py-16 px-3 sm:px-6 bg-gradient-to-br from-[#dc2626] via-[#b91c1c] to-[#991b1b] overflow-x-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10 overflow-hidden">
         <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-white/20 blur-3xl"></div>
@@ -59,25 +59,32 @@ const Footer = () => {
               <h2 className="text-3xl font-bold text-white">Rocket Singh Enterprises</h2>
             </Link>
             <div className="space-y-4">
-              <h3 className="text-lg font-bold text-white mb-0">Get Your Passport Without The Hassles</h3>
+              <h3 className="text-lg font-bold text-white mb-0">Office Address</h3>
               <p className="text-sm text-white/85">
-                Join OUR satisfied customers who got their passports with professional assistance and guaranteed approval.
+                Office No - 116, First Floor, Seawoods Corner CHS LTD., Plot No. 19/A, Sec 25, Nerul (E), Navi Mumbai 400706
               </p>
             </div>
             <div className="mt-6">
               <p className="font-semibold text-white">Call Us</p>
               <Link
-                href="tel:+919321315524"
+                href="tel:+917021388625"
                 className="text-white/90 text-sm font-medium hover:text-white transition"
               >
-                +91 9321315524
+                +91 7021388625
               </Link>
              <span className="text-white/90 text-sm font-medium"> | </span>
               <Link
-                href="tel:+918591070718"
+                href="tel:+918108000188"
                 className="text-white/90 text-sm font-medium hover:text-white transition"
               >
-                +91 8591070718
+                +91 8108000188
+              </Link>
+             <span className="text-white/90 text-sm font-medium"> | </span>
+              <Link
+                href="tel:+919322444733"
+                className="text-white/90 text-sm font-medium hover:text-white transition"
+              >
+                +91 93224 44733
               </Link>
             </div>
             <div className="mt-4">
@@ -207,6 +214,7 @@ const Footer = () => {
                 alt="Aneeverse"
                 width={30}
                 height={20}
+                className="brightness-0 invert"
               />
             </Link>
           </div>

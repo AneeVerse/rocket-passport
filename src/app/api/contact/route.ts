@@ -105,7 +105,7 @@ export async function POST(request: Request) {
       `,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-          <h2 style="color: #027b7a;">New Contact Form Submission</h2>
+          <h2 style="color: #dc2626;">New Contact Form Submission</h2>
           <p><strong>Name:</strong> ${formData.name}</p>
           <p><strong>Email:</strong> ${formData.email}</p>
           <p><strong>Phone:</strong> ${formData.phone || 'Not provided'}</p>
@@ -148,24 +148,24 @@ export async function POST(request: Request) {
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background: #f9f9f9;">
           <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
             <div style="text-align: center; margin-bottom: 30px;">
-              <h1 style="color: #027b7a; margin: 0;">Rocket Pass Services</h1>
+              <h1 style="color: #dc2626; margin: 0;">Rocket Pass Services</h1>
               <p style="color: #666; margin: 5px 0;">Your Trusted Passport Partner</p>
             </div>
             
-            <h2 style="color: #027b7a;">Thank You for Contacting Us!</h2>
+            <h2 style="color: #dc2626;">Thank You for Contacting Us!</h2>
             
             <p>Dear <strong>${formData.name}</strong>,</p>
             
             <p>Thank you for reaching out to Rocket Pass Services! We have successfully received your <strong>${serviceType.toLowerCase()}</strong> inquiry and appreciate your interest in our services.</p>
             
             <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
-              <h3 style="color: #027b7a; margin-top: 0;">Your Inquiry Details:</h3>
+              <h3 style="color: #dc2626; margin-top: 0;">Your Inquiry Details:</h3>
               <p><strong>Subject:</strong> ${formData.subject}</p>
               <p><strong>Message:</strong> ${formData.message}</p>
             </div>
             
-            <div style="background: #e8f5f5; padding: 20px; border-radius: 8px; border-left: 4px solid #027b7a;">
-              <h3 style="color: #027b7a; margin-top: 0;">What Happens Next?</h3>
+            <div style="background: #e8f5f5; padding: 20px; border-radius: 8px; border-left: 4px solid #dc2626;">
+              <h3 style="color: #dc2626; margin-top: 0;">What Happens Next?</h3>
               <ul style="color: #333; line-height: 1.6;">
                 <li>Our expert team will review your inquiry within 24-48 hours</li>
                 <li>We'll contact you with personalized guidance for your passport needs</li>
@@ -175,7 +175,7 @@ export async function POST(request: Request) {
             
             <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee;">
               <p style="color: #666; margin: 0;">Need immediate assistance?</p>
-              <p style="color: #027b7a; font-weight: bold; margin: 5px 0;">Call us or WhatsApp: +91 70210 15803</p>
+              <p style="color: #dc2626; font-weight: bold; margin: 5px 0;">Call us or WhatsApp: +91 70210 15803</p>
               <p style="color: #666; font-size: 14px;">Email: ${process.env.EMAIL_USER}</p>
             </div>
             

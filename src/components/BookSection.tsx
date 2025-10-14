@@ -11,7 +11,7 @@ export default function BookSection() {
             <svg width="100%" height="100%" viewBox="0 0 1200 400" className="w-full h-full">
               <defs>
                 <pattern id="waves" x="0" y="0" width="100" height="15" patternUnits="userSpaceOnUse">
-                  <path d="M0,10 Q25,0 50,10 T100,10" stroke="#027b7a" strokeWidth="1" fill="none"/>
+                  <path d="M0,10 Q25,0 50,10 T100,10" stroke="#dc2626" strokeWidth="1" fill="none"/>
                 </pattern>
               </defs>
               <rect width="100%" height="100%" fill="url(#waves)"/>
@@ -19,7 +19,7 @@ export default function BookSection() {
             <svg width="100%" height="100%" viewBox="0 0 1200 400" className="w-full h-full">
               <defs>
                 <pattern id="waves" x="0" y="0" width="100" height="15" patternUnits="userSpaceOnUse">
-                  <path d="M0,10 Q25,0 50,10 T100,10" stroke="#027b7a" strokeWidth="1" fill="none"/>
+                  <path d="M0,10 Q25,0 50,10 T100,10" stroke="#dc2626" strokeWidth="1" fill="none"/>
                 </pattern>
               </defs>
               <rect width="100%" height="100%" fill="url(#waves)"/>
@@ -68,7 +68,7 @@ export default function BookSection() {
                     height={60}
                     className="rounded-lg w-12 h-12 sm:w-15 sm:h-15"
                   />
-                  <div className="absolute -top-1 -right-1 bg-[#027b7a] rounded-full p-1">
+                  <div className="absolute -top-1 -right-1 bg-[#dc2626] rounded-full p-1">
                     <svg className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd"/>
                     </svg>
@@ -97,7 +97,7 @@ export default function BookSection() {
                     height={60}
                     className="rounded-lg w-12 h-12 sm:w-15 sm:h-15"
                   />
-                  <div className="absolute -top-1 -right-1 bg-[#027b7a] rounded-full p-1">
+                  <div className="absolute -top-1 -right-1 bg-[#dc2626] rounded-full p-1">
                     <svg className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" clipRule="evenodd"/>
                     </svg>
@@ -117,15 +117,16 @@ export default function BookSection() {
           </div>
 
           {/* Success Banner */}
-          <div className="bg-[#027b7a] text-white text-center py-4 sm:py-6 rounded-lg mb-6 sm:mb-8 px-4">
-            <p className="text-xs sm:text-sm font-medium tracking-wide uppercase leading-relaxed">
-              100% SUCCESS IN PASSPORTS, FROM NEW ONES TO CORRECTIONS AND NAME CHANGES.
-            </p>
+          <div className="text-center">
+            <button className="relative z-20 bg-[#dc2626] hover:bg-[#b91c1c] hover:shadow-lg hover:scale-105 active:scale-95 text-white font-medium py-5 px-6 sm:px-12 rounded-lg transition-all duration-300 uppercase tracking-wide text-sm sm:text-base cursor-pointer">
+               100% SUCCESS IN PASSPORTS, FROM NEW ONES TO CORRECTIONS AND NAME CHANGES.
+            </button>
           </div>
+         
 
           {/* CTA Button */}
-          <div className="text-center -mb-17">
-            <button className="relative z-20 bg-[#027b7a] hover:bg-[#026968] hover:shadow-lg hover:scale-105 active:scale-95 text-white font-semibold py-3 px-6 sm:px-8 rounded-lg transition-all duration-300 uppercase tracking-wide text-sm sm:text-base cursor-pointer">
+          <div className="text-center -mb-17 mt-8">
+            <button className="relative z-20 bg-[#dc2626] hover:bg-[#b91c1c] hover:shadow-lg hover:scale-105 active:scale-95 text-white font-semibold py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 uppercase tracking-wide text-sm sm:text-base cursor-pointer">
               BOOK A CONSULTATION
             </button>
           </div>

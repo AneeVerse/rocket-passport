@@ -70,10 +70,10 @@ const branches: Branch[] = [
 
 export default function BranchesSection() {
   return (
-    <section className="py-12 sm:py-16 bg-[#ecf7ff]">
+    <section className="py-12 sm:py-16 bg-[#fef2f2]">
       <div className="mx-auto max-w-[1390px] px-4 sm:px-6">
         <h2 className="text-center text-2xl sm:text-3xl lg:text-[42px] xl:text-[48px] font-serif font-bold text-[#1f1f1f]">
-          Our <span className="text-[#027b7a]">Service Locations</span>
+          Our <span className="text-[#dc2626]">Service Locations</span>
         </h2>
 
         <div className="mt-8 sm:mt-10 grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 xl:grid-cols-3">
@@ -91,7 +91,7 @@ export default function BranchesSection() {
 
               <div className="mt-4 space-y-3 text-sm sm:text-[16px] text-[#374151]">
                 <div className="flex items-start gap-3">
-                  <FaLocationArrow className="mt-1 h-4 w-4 sm:h-5 sm:w-5 text-[#027b7a] flex-shrink-0" />
+                  <FaLocationArrow className="mt-1 h-4 w-4 sm:h-5 sm:w-5 text-[#dc2626] flex-shrink-0" />
                   <p className="leading-6 sm:leading-7">
                     {b.addressLines.map((line, i) => (
                       <span key={i} className="block">
@@ -101,7 +101,7 @@ export default function BranchesSection() {
                   </p>
                 </div>
                 <div className="flex items-center gap-3">
-                  <FaPhone className="h-4 w-4 sm:h-5 sm:w-5 text-[#027b7a] flex-shrink-0" />
+                  <FaPhone className="h-4 w-4 sm:h-5 sm:w-5 text-[#dc2626] flex-shrink-0" />
                   <a href={`tel:${b.phone.replace(/\s/g, '')}`} className="hover:underline">
                     Phone: {b.phone}
                   </a>

@@ -35,7 +35,7 @@ export default function TypesOfPassports() {
           {/* Left: Title + Accordion */}
           <div className="lg:col-span-4 order-2 lg:order-1">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-[#121518] mb-3 text-center lg:text-left">
-              Types Of <span className="text-[#027b7a]">Passports</span>
+              Types Of <span className="text-[#dc2626]">Passports</span>
             </h2>
             <p className="text-[#5f6570] mb-6 sm:mb-8 text-sm sm:text-base text-center lg:text-left">
               There are three types of Indian passports. These include-
@@ -48,7 +48,7 @@ export default function TypesOfPassports() {
                   <div
                     key={item.title}
                     className={`border rounded-xl transition-colors shadow-sm ${
-                      isOpen ? 'border-[#027b7a] bg-[#f8fdfd] shadow-md' : 'border-gray-300 bg-gray-50 hover:bg-gray-100'
+                      isOpen ? 'border-[#dc2626] bg-[#f8fdfd] shadow-md' : 'border-gray-300 bg-gray-50 hover:bg-gray-100'
                     }`}
                   >
                     <button
@@ -56,8 +56,8 @@ export default function TypesOfPassports() {
                       className="w-full grid grid-cols-[1fr_auto] items-center text-left px-4 sm:px-6 h-12 sm:h-14"
                       onClick={() => setOpenIndex(isOpen ? null : idx)}
                     >
-                      <span className={`font-bold leading-none mt-2 text-sm sm:text-base ${isOpen ? 'text-[#027b7a]' : 'text-[#374151]'}`}>{item.title}</span>
-                      <span className={`inline-flex items-center mt-2 justify-center leading-none ${isOpen ? 'text-[#027b7a]' : 'text-[#6b7280]'} text-2xl sm:text-3xl lg:text-4xl font-semibold w-8 h-8 sm:w-10 sm:h-10`}>
+                      <span className={`font-bold leading-none mt-2 text-sm sm:text-base ${isOpen ? 'text-[#dc2626]' : 'text-[#374151]'}`}>{item.title}</span>
+                      <span className={`inline-flex items-center mt-2 justify-center leading-none ${isOpen ? 'text-[#dc2626]' : 'text-[#6b7280]'} text-2xl sm:text-3xl lg:text-4xl font-semibold w-8 h-8 sm:w-10 sm:h-10`}>
                         {isOpen ? '−' : '+'}
                       </span>
                     </button>

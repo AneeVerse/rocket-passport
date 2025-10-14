@@ -8,13 +8,13 @@ export default function AboutUs() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
           {/* Left intro column */}
           <div className="lg:col-span-6 flex flex-col justify-center text-center lg:text-left">
-            <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium mb-6 bg-[#ecf7ff] text-[#027b7a] border border-[#027b7a]/20 w-fit mx-auto lg:mx-0">
+            <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium mb-6 bg-[#fef2f2] text-[#dc2626] border border-[#dc2626]/20 w-fit mx-auto lg:mx-0">
               WHY US
             </div>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-[#1f1f1f] leading-tight mb-5">
               Why Choose Our
               <br className="hidden sm:block" /> 
-              <span className="text-[#027b7a]">Passport Services</span>
+              <span className="text-[#dc2626]">Passport Services</span>
             </h2>
             <p className="text-sm sm:text-base text-[#5f6570] leading-relaxed mb-6 sm:mb-8 max-w-prose mx-auto lg:mx-0">
               With over 20 years of experience and 100,000+ successful applications, we are India&apos;s most trusted passport consultancy. Our expert team ensures your application is completed correctly the first time.
@@ -22,32 +22,32 @@ export default function AboutUs() {
 
             {/* Statistics Cards */}
             <div className="grid grid-cols-3 gap-3 sm:gap-4 mb-6 sm:mb-8">
-              <div className="bg-[#ecf7ff] rounded-xl p-3 sm:p-4 shadow-lg border border-gray-100 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#027b7a]/10 rounded-lg flex items-center justify-center mx-auto mb-2">
-                  <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-[#027b7a]" />
+              <div className="bg-[#fef2f2] rounded-xl p-3 sm:p-4 shadow-lg border border-gray-100 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#dc2626]/10 rounded-lg flex items-center justify-center mx-auto mb-2">
+                  <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-[#dc2626]" />
                 </div>
                 <div className="text-lg sm:text-xl font-bold text-gray-900 mb-1">20+</div>
                 <div className="text-xs sm:text-sm text-gray-600 font-medium">Years Experience</div>
               </div>
 
-              <div className="bg-[#ecf7ff] rounded-xl p-3 sm:p-4 shadow-lg border border-gray-100 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#027b7a]/10 rounded-lg flex items-center justify-center mx-auto mb-2">
-                  <Users className="w-4 h-4 sm:w-5 sm:h-5 text-[#027b7a]" />
+              <div className="bg-[#fef2f2] rounded-xl p-3 sm:p-4 shadow-lg border border-gray-100 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#dc2626]/10 rounded-lg flex items-center justify-center mx-auto mb-2">
+                  <Users className="w-4 h-4 sm:w-5 sm:h-5 text-[#dc2626]" />
                 </div>
                 <div className="text-lg sm:text-xl font-bold text-gray-900 mb-1">100K+</div>
                 <div className="text-xs sm:text-sm text-gray-600 font-medium">Successful Applications</div>
               </div>
 
-              <div className="bg-[#ecf7ff] rounded-xl p-3 sm:p-4 shadow-lg border border-gray-100 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#027b7a]/10 rounded-lg flex items-center justify-center mx-auto mb-2">
-                  <Target className="w-4 h-4 sm:w-5 sm:h-5 text-[#027b7a]" />
+              <div className="bg-[#fef2f2] rounded-xl p-3 sm:p-4 shadow-lg border border-gray-100 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#dc2626]/10 rounded-lg flex items-center justify-center mx-auto mb-2">
+                  <Target className="w-4 h-4 sm:w-5 sm:h-5 text-[#dc2626]" />
                 </div>
                 <div className="text-lg sm:text-xl font-bold text-gray-900 mb-1">100%</div>
                 <div className="text-xs sm:text-sm text-gray-600 font-medium">Approval Rate</div>
               </div>
             </div>
 
-            <button className="inline-flex items-center gap-2 bg-[#027b7a] hover:bg-[#026968] text-white font-semibold py-3 px-6 rounded-lg transition-colors w-fit mx-auto lg:mx-0 text-sm sm:text-base">
+            <button className="inline-flex items-center gap-2 bg-[#dc2626] hover:bg-[#b91c1c] text-white font-semibold py-3 px-6 rounded-lg transition-colors w-fit mx-auto lg:mx-0 text-sm sm:text-base">
               Get Started Today
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
@@ -71,8 +71,8 @@ export default function AboutUs() {
               {/* Floating feature cards */}
               <div className="absolute -bottom-6 -left-4 sm:-left-6 bg-white rounded-xl p-4 sm:p-6 shadow-xl border border-gray-100 max-w-xs">
                 <div className="flex items-center gap-3 mb-2">
-                  <div className="w-10 h-10 bg-[#027b7a]/10 rounded-lg flex items-center justify-center">
-                    <FileCheck className="w-5 h-5 text-[#027b7a]" />
+                  <div className="w-10 h-10 bg-[#dc2626]/10 rounded-lg flex items-center justify-center">
+                    <FileCheck className="w-5 h-5 text-[#dc2626]" />
                   </div>
                   <div>
                     <div className="text-lg font-bold text-gray-900">Expert</div>
@@ -86,8 +86,8 @@ export default function AboutUs() {
 
               <div className="absolute -top-4 -right-4 sm:-right-6 bg-white rounded-xl p-4 sm:p-6 shadow-xl border border-gray-100 max-w-xs">
                 <div className="flex items-center gap-3 mb-2">
-                  <div className="w-10 h-10 bg-[#027b7a]/10 rounded-lg flex items-center justify-center">
-                    <Zap className="w-5 h-5 text-[#027b7a]" />
+                  <div className="w-10 h-10 bg-[#dc2626]/10 rounded-lg flex items-center justify-center">
+                    <Zap className="w-5 h-5 text-[#dc2626]" />
                   </div>
                   <div>
                     <div className="text-lg font-bold text-gray-900">Fast</div>
@@ -100,8 +100,8 @@ export default function AboutUs() {
               </div>
 
               {/* Decorative elements */}
-              <div className="absolute top-1/2 -left-8 w-16 h-16 bg-[#027b7a]/10 rounded-full blur-xl"></div>
-              <div className="absolute bottom-1/4 -right-8 w-20 h-20 bg-[#027b7a]/5 rounded-full blur-xl"></div>
+              <div className="absolute top-1/2 -left-8 w-16 h-16 bg-[#dc2626]/10 rounded-full blur-xl"></div>
+              <div className="absolute bottom-1/4 -right-8 w-20 h-20 bg-[#dc2626]/5 rounded-full blur-xl"></div>
             </div>
           </div>
         </div>

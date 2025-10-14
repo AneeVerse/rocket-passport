@@ -3,7 +3,7 @@ import ContactForm from './ContactForm';
 
 export default function Hero() {
   return (
-    <section id="hero" className="bg-[#ecf7ff] min-h-screen relative overflow-hidden">
+    <section id="hero" className="bg-[#fef2f2] min-h-screen relative overflow-hidden">
       <div className="max-w-[1400] mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center relative z-10">
           {/* Left Content */}
@@ -18,7 +18,7 @@ export default function Hero() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
-              <button className="bg-[#027b7a] text-white px-6 sm:px-8 py-3 rounded-lg font-medium hover:bg-[#026968] transition-colors text-sm sm:text-base">
+              <button className="bg-[#dc2626] text-white px-6 sm:px-8 py-3 rounded-lg font-medium hover:bg-[#b91c1c] transition-colors text-sm sm:text-base">
                 Apply for Passport Now
               </button>
               {/* <button className="border border-gray-300 text-gray-700 px-6 sm:px-8 py-3 rounded-lg font-medium hover:bg-gray-50 transition-colors text-sm sm:text-base">

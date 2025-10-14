@@ -20,7 +20,7 @@ export default function Navbar() {
       <div className="max-w-[1400] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 md:h-18">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 flex items-center space-x-3">
             <Link href="/">
               <Image
                 src="/images/nav-logo.png"
@@ -30,6 +30,9 @@ export default function Navbar() {
                 className="h-15 md:h-20 w-auto"
               />
             </Link>
+            <div className="hidden sm:block">
+              <span className="text-[#dc2626] font-extrabold uppercase text-lg">Tatkal Passport</span>
+            </div>
           </div>
 
           {/* Navigation Links - Desktop */}
@@ -37,25 +40,25 @@ export default function Navbar() {
             <div className="flex items-center space-x-8">
               <button 
                 onClick={() => scrollToSection('services')}
-                className="text-gray-700 hover:text-[#027b7a] px-3 py-2 text-sm font-medium transition-colors"
+                className="text-gray-700 hover:text-[#dc2626] px-3 py-2 text-sm font-medium transition-colors"
               >
                 Services
               </button>
               <button 
                 onClick={() => scrollToSection('about')}
-                className="text-gray-700 hover:text-[#027b7a] px-3 py-2 text-sm font-medium transition-colors"
+                className="text-gray-700 hover:text-[#dc2626] px-3 py-2 text-sm font-medium transition-colors"
               >
                 About
               </button>
               <button 
                 onClick={() => scrollToSection('blog')}
-                className="text-gray-700 hover:text-[#027b7a] px-3 py-2 text-sm font-medium transition-colors"
+                className="text-gray-700 hover:text-[#dc2626] px-3 py-2 text-sm font-medium transition-colors"
               >
                 Blog
               </button>
               <button 
                 onClick={() => scrollToSection('hero')}
-                className="text-gray-700 hover:text-[#027b7a] px-3 py-2 text-sm font-medium transition-colors"
+                className="text-gray-700 hover:text-[#dc2626] px-3 py-2 text-sm font-medium transition-colors"
               >
                 Contact Us
               </button>
@@ -66,7 +69,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center">
             <button 
               onClick={() => scrollToSection('contact')}
-              className="bg-[#027b7a] text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-[#026968] transition-colors"
+              className="bg-[#dc2626] text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-[#b91c1c] transition-colors"
             >
               Get Free Consultation →
             </button>
@@ -77,7 +80,7 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="bg-[#ecf7ff] rounded-md p-2 inline-flex items-center justify-center text-gray-600 hover:text-[#027b7a] hover:bg-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#027b7a]"
+              className="bg-[#fef2f2] rounded-md p-2 inline-flex items-center justify-center text-gray-600 hover:text-[#dc2626] hover:bg-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#dc2626]"
             >
               <span className="sr-only">{isMobileMenuOpen ? 'Close main menu' : 'Open main menu'}</span>
               {isMobileMenuOpen ? (
@@ -96,22 +99,25 @@ export default function Navbar() {
 
       {/* Mobile Menu - Full Screen Overlay */}
       {isMobileMenuOpen && (
-        <div className="md:hidden fixed inset-0 bg-[#ecf7ff] z-50 flex flex-col">
+        <div className="md:hidden fixed inset-0 bg-[#fef2f2] z-50 flex flex-col">
           {/* Header with logo and close button */}
           <div className="flex justify-between items-center px-4 py-4 border-b border-gray-200">
-            <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
-              <Image
-                src="/images/nav-logo.png"
-                alt="Stardom Logo"
-                width={125}
-                height={23}
-                className="h-15 w-auto"
-              />
-            </Link>
+            <div className="flex items-center space-x-3">
+              <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
+                <Image
+                  src="/images/nav-logo.png"
+                  alt="Stardom Logo"
+                  width={125}
+                  height={23}
+                  className="h-15 w-auto"
+                />
+              </Link>
+              <span className="text-[#dc2626] font-semibold text-lg">Tatkal Passport</span>
+            </div>
             <button
               type="button"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-600 hover:text-[#027b7a] hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#027b7a]"
+              className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-600 hover:text-[#dc2626] hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#dc2626]"
             >
               <span className="sr-only">Close menu</span>
               <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -125,25 +131,25 @@ export default function Navbar() {
             <div className="space-y-2">
               <button 
                 onClick={() => scrollToSection('services')}
-                className="block px-4 py-4 text-gray-700 hover:text-[#027b7a] hover:bg-white text-xl font-medium transition-colors rounded-lg text-center w-full"
+                className="block px-4 py-4 text-gray-700 hover:text-[#dc2626] hover:bg-white text-xl font-medium transition-colors rounded-lg text-center w-full"
               >
                 Services
               </button>
               <button 
                 onClick={() => scrollToSection('about')}
-                className="block px-4 py-4 text-gray-700 hover:text-[#027b7a] hover:bg-white text-xl font-medium transition-colors rounded-lg text-center w-full"
+                className="block px-4 py-4 text-gray-700 hover:text-[#dc2626] hover:bg-white text-xl font-medium transition-colors rounded-lg text-center w-full"
               >
                 About
               </button>
               <button 
                 onClick={() => scrollToSection('blog')}
-                className="block px-4 py-4 text-gray-700 hover:text-[#027b7a] hover:bg-white text-xl font-medium transition-colors rounded-lg text-center w-full"
+                className="block px-4 py-4 text-gray-700 hover:text-[#dc2626] hover:bg-white text-xl font-medium transition-colors rounded-lg text-center w-full"
               >
                 Blog
               </button>
               <button 
                 onClick={() => scrollToSection('contact')}
-                className="block px-4 py-4 text-gray-700 hover:text-[#027b7a] hover:bg-white text-xl font-medium transition-colors rounded-lg text-center w-full"
+                className="block px-4 py-4 text-gray-700 hover:text-[#dc2626] hover:bg-white text-xl font-medium transition-colors rounded-lg text-center w-full"
               >
                 Contact Us
               </button>
@@ -153,7 +159,7 @@ export default function Navbar() {
             <div className="mt-8 px-4">
               <button 
                 onClick={() => scrollToSection('contact')}
-                className="w-full bg-[#027b7a] text-white px-6 py-4 rounded-lg text-lg font-medium hover:bg-[#026968] transition-colors"
+                className="w-full bg-[#dc2626] text-white px-6 py-4 rounded-lg text-lg font-medium hover:bg-[#b91c1c] transition-colors"
               >
                 Get Free Consultation →
               </button>

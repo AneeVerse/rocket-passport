@@ -6,7 +6,7 @@ export default function ConsultationSection() {
   return (
     <section id="contact" className="py-12 sm:py-16">
       <div className="mx-auto max-w-[1350px] px-4 sm:px-6">
-        <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#027b7a] via-[#026968] to-[#025756] p-6 sm:p-8 lg:p-12 text-white shadow-[0_20px_50px_-10px_rgba(2,123,122,0.4)]">
+        <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#dc2626] via-[#b91c1c] to-[#991b1b] p-6 sm:p-8 lg:p-12 text-white shadow-[0_20px_50px_-10px_rgba(220,38,38,0.4)]">
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-10">
             <div className="absolute -right-20 -top-20 h-40 w-40 rounded-full bg-white/20 blur-3xl"></div>
@@ -32,7 +32,7 @@ export default function ConsultationSection() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
-                <button className="group inline-flex items-center justify-center gap-3 rounded-xl bg-white px-6 py-3 text-[#027b7a] font-semibold shadow-lg transition-all hover:shadow-xl hover:scale-105 active:scale-95">
+                <button className="group inline-flex items-center justify-center gap-3 rounded-xl bg-white px-6 py-3 text-[#dc2626] font-semibold shadow-lg transition-all hover:shadow-xl hover:scale-105 active:scale-95">
                   <span>Get Free Consultation</span>
                   <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
