@@ -2,15 +2,23 @@ import Image from 'next/image';
 
 export default function BookSection() {
   return (
-    <section className="relative mt-0 lg:-mt-24 z-30">
-      <div className="max-w-[1400] mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative mt-0 lg:-mt-18 z-30">
+      <div className="max-w-[1400] mx-auto px-4 sm:px-6 lg:px-2">
         {/* Main container with white background and curved pattern */}
-        <div className="bg-[#ecf7ff] rounded-t-2xl sm:rounded-t-3xl relative overflow-hidden pt-16 sm:pt-20 lg:pt-16 pb-16 sm:pb-24 px-4 sm:px-8 lg:px-16">
+        <div className="bg-white rounded-2xl sm:rounded-3xl relative overflow-hidden pt-16 sm:pt-20 lg:pt-16 pb-16 sm:pb-24 px-4 sm:px-8 lg:px-16 shadow-2xl">
           {/* Decorative wave pattern background */}
-          <div className="absolute inset-0 opacity-5">
+          <div className="absolute inset-0 opacity-10">
             <svg width="100%" height="100%" viewBox="0 0 1200 400" className="w-full h-full">
               <defs>
-                <pattern id="waves" x="0" y="0" width="100" height="20" patternUnits="userSpaceOnUse">
+                <pattern id="waves" x="0" y="0" width="100" height="15" patternUnits="userSpaceOnUse">
+                  <path d="M0,10 Q25,0 50,10 T100,10" stroke="#027b7a" strokeWidth="1" fill="none"/>
+                </pattern>
+              </defs>
+              <rect width="100%" height="100%" fill="url(#waves)"/>
+            </svg>
+            <svg width="100%" height="100%" viewBox="0 0 1200 400" className="w-full h-full">
+              <defs>
+                <pattern id="waves" x="0" y="0" width="100" height="15" patternUnits="userSpaceOnUse">
                   <path d="M0,10 Q25,0 50,10 T100,10" stroke="#027b7a" strokeWidth="1" fill="none"/>
                 </pattern>
               </defs>
@@ -21,7 +29,7 @@ export default function BookSection() {
           {/* Services Grid */}
           <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-12 sm:mb-16">
             {/* New Passport (Normal) */}
-            <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
+            <div className="bg-white rounded-xl shadow-lg shadow-gray-300/50 drop-shadow-lg p-4 sm:p-6 flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
               <div className="flex-shrink-0 mx-auto sm:mx-0">
                 <div className="relative">
                   <Image
@@ -50,7 +58,7 @@ export default function BookSection() {
             </div>
 
             {/* New Passport (Tatkaal) */}
-            <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
+            <div className="bg-white rounded-xl shadow-lg shadow-gray-300/50 drop-shadow-lg p-4 sm:p-6 flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
               <div className="flex-shrink-0 mx-auto sm:mx-0">
                 <div className="relative">
                   <Image
@@ -79,7 +87,7 @@ export default function BookSection() {
             </div>
 
             {/* Correction in Passport */}
-            <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 flex flex-col sm:flex-row items-start gap-3 sm:gap-4 sm:col-span-2 lg:col-span-1">
+            <div className="bg-white rounded-xl shadow-lg shadow-gray-300/50 drop-shadow-lg p-4 sm:p-6 flex flex-col sm:flex-row items-start gap-3 sm:gap-4 sm:col-span-2 lg:col-span-1">
               <div className="flex-shrink-0 mx-auto sm:mx-0">
                 <div className="relative">
                   <Image
@@ -116,8 +124,8 @@ export default function BookSection() {
           </div>
 
           {/* CTA Button */}
-          <div className="text-center">
-            <button className="bg-[#027b7a] hover:bg-[#026968] text-white font-semibold py-3 px-6 sm:px-8 rounded-lg transition-colors duration-300 uppercase tracking-wide text-sm sm:text-base">
+          <div className="text-center -mb-17">
+            <button className="relative z-20 bg-[#027b7a] hover:bg-[#026968] hover:shadow-lg hover:scale-105 active:scale-95 text-white font-semibold py-3 px-6 sm:px-8 rounded-lg transition-all duration-300 uppercase tracking-wide text-sm sm:text-base cursor-pointer">
               BOOK A CONSULTATION
             </button>
           </div>
