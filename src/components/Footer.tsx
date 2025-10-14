@@ -4,6 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <footer className="w-full text-white pt-12 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -46,27 +53,42 @@ export default function Footer() {
               <div className="grid grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
                 {/* Column 1 */}
                 <div className="space-y-3">
-                  <Link href="/" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm py-2 border-l-2 border-gray-700 hover:border-[#ecf7ff] pl-3 hover:pl-4 transition-all duration-200 block">
+                  <button 
+                    onClick={() => scrollToSection('hero')}
+                    className="text-gray-300 hover:text-white transition-colors duration-200 text-sm py-2 border-l-2 border-gray-700 hover:border-[#ecf7ff] pl-3 hover:pl-4 transition-all duration-200 block text-left w-full"
+                  >
                     Home
-                  </Link>
-                  <Link href="/about" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm py-2 border-l-2 border-gray-700 hover:border-[#ecf7ff] pl-3 hover:pl-4 transition-all duration-200 block">
+                  </button>
+                  <button 
+                    onClick={() => scrollToSection('about')}
+                    className="text-gray-300 hover:text-white transition-colors duration-200 text-sm py-2 border-l-2 border-gray-700 hover:border-[#ecf7ff] pl-3 hover:pl-4 transition-all duration-200 block text-left w-full"
+                  >
                     About
-                  </Link>
-                  <Link href="/#social-mosaic" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm py-2 border-l-2 border-gray-700 hover:border-[#ecf7ff] pl-3 hover:pl-4 transition-all duration-200 block">
-                    Gallery
-                  </Link>
+                  </button>
+                  <button 
+                    onClick={() => scrollToSection('services')}
+                    className="text-gray-300 hover:text-white transition-colors duration-200 text-sm py-2 border-l-2 border-gray-700 hover:border-[#ecf7ff] pl-3 hover:pl-4 transition-all duration-200 block text-left w-full"
+                  >
+                    Services
+                  </button>
                 </div>
                 
                 {/* Column 2 */}
                 <div className="space-y-3">
-                  <Link href="/contact" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm py-2 border-l-2 border-gray-700 hover:border-[#ecf7ff] pl-3 hover:pl-4 transition-all duration-200 block">
+                  <button 
+                    onClick={() => scrollToSection('contact')}
+                    className="text-gray-300 hover:text-white transition-colors duration-200 text-sm py-2 border-l-2 border-gray-700 hover:border-[#ecf7ff] pl-3 hover:pl-4 transition-all duration-200 block text-left w-full"
+                  >
                     Contact
-                  </Link>
-                  <Link href="/faq" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm py-2 border-l-2 border-gray-700 hover:border-[#ecf7ff] pl-3 hover:pl-4 transition-all duration-200 block">
-                    FAQ
-                  </Link>
+                  </button>
+                  <button 
+                    onClick={() => scrollToSection('blog')}
+                    className="text-gray-300 hover:text-white transition-colors duration-200 text-sm py-2 border-l-2 border-gray-700 hover:border-[#ecf7ff] pl-3 hover:pl-4 transition-all duration-200 block text-left w-full"
+                  >
+                    Blog
+                  </button>
                   <Link href="/#upcoming-events" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm py-2 border-l-2 border-gray-700 hover:border-[#ecf7ff] pl-3 hover:pl-4 transition-all duration-200 block">
-                    Upcoming Events
+                    FAQ
                   </Link>
                 </div>
                 

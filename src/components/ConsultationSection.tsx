@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function ConsultationSection() {
   return (
-    <section className="py-12 sm:py-16">
+    <section id="contact" className="py-12 sm:py-16">
       <div className="mx-auto max-w-[1350px] px-4 sm:px-6">
         <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#027b7a] via-[#026968] to-[#025756] p-6 sm:p-8 lg:p-12 text-white shadow-[0_20px_50px_-10px_rgba(2,123,122,0.4)]">
           {/* Background Pattern */}

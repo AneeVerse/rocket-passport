@@ -7,8 +7,16 @@ import { useState } from 'react';
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMobileMenuOpen(false);
+  };
+
   return (
-    <nav className="bg-white shadow-sm relative z-50">
+    <nav className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-[1400] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 md:h-18">
           {/* Logo */}
@@ -27,36 +35,39 @@ export default function Navbar() {
           {/* Navigation Links - Desktop */}
           <div className="hidden md:block">
             <div className="flex items-center space-x-8">
-              <Link 
-                href="/" 
+              <button 
+                onClick={() => scrollToSection('services')}
                 className="text-gray-700 hover:text-[#027b7a] px-3 py-2 text-sm font-medium transition-colors"
               >
                 Services
-              </Link>
-              <Link 
-                href="/pricing" 
+              </button>
+              <button 
+                onClick={() => scrollToSection('about')}
                 className="text-gray-700 hover:text-[#027b7a] px-3 py-2 text-sm font-medium transition-colors"
               >
                 About
-              </Link>
-              <Link 
-                href="/about" 
+              </button>
+              <button 
+                onClick={() => scrollToSection('blog')}
                 className="text-gray-700 hover:text-[#027b7a] px-3 py-2 text-sm font-medium transition-colors"
               >
                 Blog
-              </Link>
-              <Link 
-                href="/resources" 
+              </button>
+              <button 
+                onClick={() => scrollToSection('hero')}
                 className="text-gray-700 hover:text-[#027b7a] px-3 py-2 text-sm font-medium transition-colors"
               >
                 Contact Us
-              </Link>
+              </button>
             </div>
           </div>
 
           {/* CTA Button - Desktop */}
           <div className="hidden md:flex items-center">
-            <button className="bg-[#027b7a] text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-[#026968] transition-colors">
+            <button 
+              onClick={() => scrollToSection('contact')}
+              className="bg-[#027b7a] text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-[#026968] transition-colors"
+            >
               Get Free Consultation →
             </button>
           </div>
@@ -112,41 +123,37 @@ export default function Navbar() {
           {/* Menu Content */}
           <div className="flex-1 flex flex-col justify-center px-6 py-8">
             <div className="space-y-2">
-              <Link 
-                href="/" 
-                className="block px-4 py-4 text-gray-700 hover:text-[#027b7a] hover:bg-white text-xl font-medium transition-colors rounded-lg text-center"
-                onClick={() => setIsMobileMenuOpen(false)}
+              <button 
+                onClick={() => scrollToSection('services')}
+                className="block px-4 py-4 text-gray-700 hover:text-[#027b7a] hover:bg-white text-xl font-medium transition-colors rounded-lg text-center w-full"
               >
                 Services
-              </Link>
-              <Link 
-                href="/pricing" 
-                className="block px-4 py-4 text-gray-700 hover:text-[#027b7a] hover:bg-white text-xl font-medium transition-colors rounded-lg text-center"
-                onClick={() => setIsMobileMenuOpen(false)}
+              </button>
+              <button 
+                onClick={() => scrollToSection('about')}
+                className="block px-4 py-4 text-gray-700 hover:text-[#027b7a] hover:bg-white text-xl font-medium transition-colors rounded-lg text-center w-full"
               >
                 About
-              </Link>
-              <Link 
-                href="/about" 
-                className="block px-4 py-4 text-gray-700 hover:text-[#027b7a] hover:bg-white text-xl font-medium transition-colors rounded-lg text-center"
-                onClick={() => setIsMobileMenuOpen(false)}
+              </button>
+              <button 
+                onClick={() => scrollToSection('blog')}
+                className="block px-4 py-4 text-gray-700 hover:text-[#027b7a] hover:bg-white text-xl font-medium transition-colors rounded-lg text-center w-full"
               >
                 Blog
-              </Link>
-              <Link 
-                href="/resources" 
-                className="block px-4 py-4 text-gray-700 hover:text-[#027b7a] hover:bg-white text-xl font-medium transition-colors rounded-lg text-center"
-                onClick={() => setIsMobileMenuOpen(false)}
+              </button>
+              <button 
+                onClick={() => scrollToSection('contact')}
+                className="block px-4 py-4 text-gray-700 hover:text-[#027b7a] hover:bg-white text-xl font-medium transition-colors rounded-lg text-center w-full"
               >
                 Contact Us
-              </Link>
+              </button>
             </div>
 
             {/* CTA Button */}
             <div className="mt-8 px-4">
               <button 
+                onClick={() => scrollToSection('contact')}
                 className="w-full bg-[#027b7a] text-white px-6 py-4 rounded-lg text-lg font-medium hover:bg-[#026968] transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
               >
                 Get Free Consultation →
               </button>

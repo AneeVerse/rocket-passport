@@ -36,7 +36,7 @@ const blogPosts = [
 
 export default function BlogSection() {
   return (
-    <section className="py-12 sm:py-16 bg-[#ecf7ff]">
+    <section id="blog" className="py-16 sm:py-20 lg:py-24 bg-white">
       <div className="mx-auto max-w-[1390px] px-4 sm:px-6">
         <div className="text-center">
           <h2 className="text-2xl sm:text-3xl lg:text-[42px] xl:text-[48px] font-serif font-bold text-[#1f1f1f]">

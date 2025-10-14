@@ -38,7 +38,7 @@ const services: ServiceItem[] = [
 
 export default function ServiceSection() {
   return (
-    <section className="bg-[#ecf7ff] py-12 sm:py-16">
+    <section id="services" className="py-16 sm:py-20 lg:py-24 bg-gray-50">
       <div className="max-w-[1420px] mx-auto px-4 sm:px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
           {/* Left intro column */}
