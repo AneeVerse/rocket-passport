@@ -8,7 +8,7 @@ import BlogSection from '@/components/BlogSection';
 import ConsultationSection from '@/components/ConsultationSection';
 import BranchesSection from '@/components/BranchesSection';
 import FeedbackReviewComponent from '@/components/FeedbackReviewComponent';
-import Footer from '@/components/Footer';
+import Footer from '@/components/Footer.jsx';
 import FAQ from '@/components/FAQ';
 
 export default function Home() {
@@ -20,8 +20,9 @@ export default function Home() {
       <AboutUs />
       <ServiceSection />
       <TypesOfPassports />
+       <BlogSection />
       <FeedbackReviewComponent />
-      <BlogSection />
+
       <ConsultationSection />
       <BranchesSection />
       <FAQ />
