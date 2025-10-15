@@ -8,7 +8,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center relative z-10">
           {/* Left Content */}
           <div className="space-y-6 lg:space-y-8 text-center lg:text-left order-1 lg:order-1">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-[55px] font-normal text-gray-900 leading-tight font-serif">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-[55px] font-normal text-gray-900 leading-tight ">
               Get Your Passport Fast
               <span className="block">Expert Guidance, Zero Hassles</span>
             </h1>

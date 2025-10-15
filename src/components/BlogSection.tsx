@@ -39,7 +39,7 @@ export default function BlogSection() {
     <section id="blog" className="py-16 sm:py-20 lg:py-24 bg-[#fef2f2]">
       <div className="mx-auto max-w-[1390px] px-4 sm:px-6">
         <div className="text-center">
-          <h2 className="text-2xl sm:text-3xl lg:text-[42px] xl:text-[48px] font-serif font-bold text-[#1f1f1f]">
+          <h2 className="text-2xl sm:text-3xl lg:text-[42px] xl:text-[48px]  font-bold text-[#1f1f1f]">
             Latest <span className="text-[#dc2626]">Blog Posts</span>
           </h2>
           <p className="mt-4 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">

@@ -46,7 +46,7 @@ export default function ServiceSection() {
             <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium mb-6 bg-white text-[#dc2626] border border-[#dc2626]/20 w-fit mx-auto lg:mx-0">
               SERVICES
             </div>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-[#1f1f1f] leading-tight mb-5">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl  font-bold text-[#1f1f1f] leading-tight mb-5">
               Complete Passport
               <br className="hidden sm:block" /> Solutions
             </h2>
@@ -108,7 +108,7 @@ export default function ServiceSection() {
                     </div>
                   </div>
 
-                  <h3 className="font-serif text-base sm:text-lg lg:text-xl font-semibold mb-2">
+                  <h3 className=" text-base sm:text-lg lg:text-xl font-semibold mb-2">
                     {service.title}
                   </h3>
                   <p className="text-xs sm:text-sm leading-relaxed mb-4 sm:mb-5 text-[#5f6570] group-hover:text-white/85">

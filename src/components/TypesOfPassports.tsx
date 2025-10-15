@@ -34,7 +34,7 @@ export default function TypesOfPassports() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
           {/* Left: Title + Accordion */}
           <div className="lg:col-span-4 order-2 lg:order-1">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-[#121518] mb-3 text-center lg:text-left">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl  font-bold text-[#121518] mb-3 text-center lg:text-left">
               Types Of <span className="text-[#dc2626]">Passports</span>
             </h2>
             <p className="text-[#5f6570] mb-6 sm:mb-8 text-sm sm:text-base text-center lg:text-left">

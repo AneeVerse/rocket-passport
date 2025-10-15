@@ -11,7 +11,7 @@ export default function AboutUs() {
             <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium mb-6 bg-[#fef2f2] text-[#dc2626] border border-[#dc2626]/20 w-fit mx-auto lg:mx-0">
               WHY US
             </div>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-[#1f1f1f] leading-tight mb-5">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl  font-bold text-[#1f1f1f] leading-tight mb-5">
               Why Choose Our
               <br className="hidden sm:block" /> 
               <span className="text-[#dc2626]">Passport Services</span>

@@ -165,7 +165,7 @@ const FeedbackReviewComponent = () => {
         <div className="max-w-[1420px] mx-auto px-6 sm:px-10 lg:px-12">
           {/* Heading */}
           <div className="mb-10 text-center">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900">
+            <h2 className="text-3xl md:text-4xl  font-bold text-gray-900">
               See What Our Happy Clients Say
             </h2>
           </div>

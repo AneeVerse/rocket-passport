@@ -72,7 +72,7 @@ export default function BranchesSection() {
   return (
     <section className="py-12 sm:py-16 bg-[#fef2f2]">
       <div className="mx-auto max-w-[1390px] px-4 sm:px-6">
-        <h2 className="text-center text-2xl sm:text-3xl lg:text-[42px] xl:text-[48px] font-serif font-bold text-[#1f1f1f]">
+        <h2 className="text-center text-2xl sm:text-3xl lg:text-[42px] xl:text-[48px]  font-bold text-[#1f1f1f]">
           Our <span className="text-[#dc2626]">Service Locations</span>
         </h2>
 
