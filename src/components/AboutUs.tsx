@@ -51,7 +51,12 @@ export default function AboutUs() {
               onClick={() => {
                 const element = document.getElementById('contact');
                 if (element) {
-                  element.scrollIntoView({ behavior: 'smooth' });
+                  const navbarHeight = 80; // Account for sticky navbar height
+                  const elementPosition = element.offsetTop - navbarHeight;
+                  window.scrollTo({
+                    top: elementPosition,
+                    behavior: 'smooth'
+                  });
                 }
               }}
               className="inline-flex items-center gap-2 bg-[#dc2626] hover:bg-[#b91c1c] text-white font-semibold py-3 px-6 rounded-lg transition-colors w-fit mx-auto lg:mx-0 text-sm sm:text-base"

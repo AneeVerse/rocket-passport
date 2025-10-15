@@ -45,7 +45,12 @@ const Secrets = () => {
             onClick={() => {
               const element = document.getElementById('contact');
               if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
+                const navbarHeight = 80; // Account for sticky navbar height
+                const elementPosition = element.offsetTop - navbarHeight;
+                window.scrollTo({
+                  top: elementPosition,
+                  behavior: 'smooth'
+                });
               }
             }}
             className="bg-black text-white font-medium px-6 py-3 rounded-full hover:bg-gray-800 transition-colors duration-200 text-sm whitespace-nowrap self-start"

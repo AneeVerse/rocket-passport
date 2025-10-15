@@ -7,6 +7,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    subject: "",
     message: "",
   });
   const [loading, setLoading] = useState(false);
@@ -28,7 +29,7 @@ const Contact = () => {
       });
       if (response.ok) {
         setSubmitted(true);
-        setFormData({ name: "", email: "", message: "" });
+        setFormData({ name: "", email: "", subject: "", message: "" });
       } else {
         alert("Failed to send message. Please try again.");
       }
@@ -41,7 +42,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="bg-gradient-to-r from-red-800 to-red-600 py-8 md:py-16 text-white">
+    <section id="contact" className="bg-gradient-to-r from-red-800 to-red-600 py-16 md:py-24 text-white min-h-screen">
       <div className="max-w-[1420px] mx-auto px-6 sm:px-10 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
           {/* Left Section: Contact Info */}
@@ -97,6 +98,18 @@ const Contact = () => {
                 onChange={handleChange}
                 className="block w-full mt-1 p-2 border-b-[2px] border-gray-300 focus:outline-none focus:border-red-600"
                 placeholder="email@gmail.com"
+                required
+              />
+            </label>
+            <label className="block">
+              <span className="text-gray-700">Subject</span>
+              <input
+                type="text"
+                name="subject"
+                value={formData.subject}
+                onChange={handleChange}
+                className="block w-full mt-1 p-2 border-b-[2px] border-gray-300 focus:outline-none focus:border-red-600"
+                placeholder="Subject of your inquiry"
                 required
               />
             </label>

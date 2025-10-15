@@ -22,7 +22,12 @@ export default function Hero() {
                 onClick={() => {
                   const element = document.getElementById('contact');
                   if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' });
+                    const navbarHeight = 80; // Account for sticky navbar height
+                    const elementPosition = element.offsetTop - navbarHeight;
+                    window.scrollTo({
+                      top: elementPosition,
+                      behavior: 'smooth'
+                    });
                   }
                 }}
                 className="bg-[#dc2626] text-white px-6 sm:px-8 py-3 rounded-lg font-medium hover:bg-[#b91c1c] transition-colors text-sm sm:text-base"

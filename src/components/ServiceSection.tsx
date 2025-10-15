@@ -57,7 +57,12 @@ export default function ServiceSection() {
                onClick={() => {
                  const element = document.getElementById('contact');
                  if (element) {
-                   element.scrollIntoView({ behavior: 'smooth' });
+                   const navbarHeight = 80; // Account for sticky navbar height
+                   const elementPosition = element.offsetTop - navbarHeight;
+                   window.scrollTo({
+                     top: elementPosition,
+                     behavior: 'smooth'
+                   });
                  }
                }}
                className="inline-flex items-center gap-2 bg-[#dc2626] hover:bg-[#b91c1c] text-white font-semibold py-3 px-6 rounded-lg transition-colors w-fit mx-auto lg:mx-0 text-sm sm:text-base"
@@ -76,7 +81,12 @@ export default function ServiceSection() {
                   onClick={() => {
                     const element = document.getElementById('contact');
                     if (element) {
-                      element.scrollIntoView({ behavior: 'smooth' });
+                      const navbarHeight = 80; // Account for sticky navbar height
+                      const elementPosition = element.offsetTop - navbarHeight;
+                      window.scrollTo({
+                        top: elementPosition,
+                        behavior: 'smooth'
+                      });
                     }
                   }}
                   className="group relative rounded-2xl p-5 sm:p-6 lg:p-7 ring-1 ring-gray-200 bg-white text-[#101010] transition-colors duration-200 hover:bg-[#dc2626] hover:text-white shadow-sm min-h-[180px] sm:min-h-[200px] cursor-pointer"

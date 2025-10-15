@@ -133,7 +133,12 @@ const FAQ = () => {
                   onClick={() => {
                     const element = document.getElementById('contact');
                     if (element) {
-                      element.scrollIntoView({ behavior: 'smooth' });
+                      const navbarHeight = 80; // Account for sticky navbar height
+                      const elementPosition = element.offsetTop - navbarHeight;
+                      window.scrollTo({
+                        top: elementPosition,
+                        behavior: 'smooth'
+                      });
                     }
                   }}
                   className="inline-flex items-center justify-center bg-transparent text-white font-medium px-8 py-4 rounded-lg border-2 border-white/30 hover:border-white hover:bg-white/10 transition-all duration-200"

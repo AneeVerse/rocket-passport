@@ -7,6 +7,7 @@ export default function PopupContactForm({ show, onClose }) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    subject: "",
     message: "",
     fromPopup: true,
   });
@@ -18,6 +19,7 @@ export default function PopupContactForm({ show, onClose }) {
       setFormData({
         name: "",
         email: "",
+        subject: "",
         message: "",
         fromPopup: true,
       });
@@ -40,7 +42,7 @@ export default function PopupContactForm({ show, onClose }) {
       });
       if (response.ok) {
         setSubmitted(true);
-        setFormData({ name: "", email: "", message: "", fromPopup: true });
+        setFormData({ name: "", email: "", subject: "", message: "", fromPopup: true });
       } else {
         alert("Failed to send message. Please try again.");
       }
@@ -103,6 +105,15 @@ export default function PopupContactForm({ show, onClose }) {
                     required
                   />
                 </div>
+                <input
+                  type="text"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  className="block w-full p-2.5 sm:p-3 rounded-xl border border-gray-300 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-200 placeholder-gray-500 text-gray-900 text-sm sm:text-base transition-all duration-200 shadow-sm bg-white"
+                  placeholder="Subject"
+                  required
+                />
                 <textarea
                   name="message"
                   value={formData.message}

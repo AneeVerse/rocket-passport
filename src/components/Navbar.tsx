@@ -10,7 +10,12 @@ export default function Navbar() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const navbarHeight = 80; // Account for sticky navbar height
+      const elementPosition = element.offsetTop - navbarHeight;
+      window.scrollTo({
+        top: elementPosition,
+        behavior: 'smooth'
+      });
     }
     setIsMobileMenuOpen(false);
   };
@@ -31,14 +36,13 @@ export default function Navbar() {
               />
             </Link>
             <div className="hidden sm:block">
-              <span className="text-[#dc2626] font-extrabold uppercase text-
-              xl -ml-4">Tatkal Passport</span>
+              <span className="text-black font-[1000] uppercase text-[20px] -ml-4">Tatkal Passport</span>
             </div>
           </div>
 
           {/* Navigation Links - Desktop */}
           <div className="hidden md:block">
-            <div className="flex items-center space-x-8">
+            <div className="flex items-center space-x-8 lg:mr-14">
               <button 
                 onClick={() => scrollToSection('services')}
                 className="text-gray-700 hover:text-[#dc2626] px-3 py-2 text-sm font-medium transition-colors"

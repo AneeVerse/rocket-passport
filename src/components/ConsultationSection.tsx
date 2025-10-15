@@ -36,7 +36,12 @@ export default function ConsultationSection() {
                   onClick={() => {
                     const element = document.getElementById('contact');
                     if (element) {
-                      element.scrollIntoView({ behavior: 'smooth' });
+                      const navbarHeight = 80; // Account for sticky navbar height
+                      const elementPosition = element.offsetTop - navbarHeight;
+                      window.scrollTo({
+                        top: elementPosition,
+                        behavior: 'smooth'
+                      });
                     }
                   }}
                   className="group inline-flex items-center justify-center gap-3 rounded-xl bg-white px-6 py-3 text-[#dc2626] font-semibold shadow-lg transition-all hover:shadow-xl hover:scale-105 active:scale-95"
@@ -51,7 +56,12 @@ export default function ConsultationSection() {
                   onClick={() => {
                     const element = document.getElementById('contact');
                     if (element) {
-                      element.scrollIntoView({ behavior: 'smooth' });
+                      const navbarHeight = 80; // Account for sticky navbar height
+                      const elementPosition = element.offsetTop - navbarHeight;
+                      window.scrollTo({
+                        top: elementPosition,
+                        behavior: 'smooth'
+                      });
                     }
                   }}
                   className="inline-flex items-center justify-center gap-3 rounded-xl border-2 border-white/30 px-6 py-3 text-white font-semibold backdrop-blur-sm transition-all hover:bg-white/10 hover:border-white/50"
