@@ -7,7 +7,7 @@ export default function PopupContactForm({ show, onClose }) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    subject: "",
+    service: "",
     message: "",
     fromPopup: true,
   });
@@ -19,7 +19,7 @@ export default function PopupContactForm({ show, onClose }) {
       setFormData({
         name: "",
         email: "",
-        subject: "",
+        service: "",
         message: "",
         fromPopup: true,
       });
@@ -42,7 +42,7 @@ export default function PopupContactForm({ show, onClose }) {
       });
       if (response.ok) {
         setSubmitted(true);
-        setFormData({ name: "", email: "", subject: "", message: "", fromPopup: true });
+        setFormData({ name: "", email: "", service: "", message: "", fromPopup: true });
       } else {
         alert("Failed to send message. Please try again.");
       }
@@ -105,15 +105,30 @@ export default function PopupContactForm({ show, onClose }) {
                     required
                   />
                 </div>
-                <input
-                  type="text"
-                  name="subject"
-                  value={formData.subject}
+                <select
+                  name="service"
+                  value={formData.service}
                   onChange={handleChange}
-                  className="block w-full p-2.5 sm:p-3 rounded-xl border border-gray-300 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-200 placeholder-gray-500 text-gray-900 text-sm sm:text-base transition-all duration-200 shadow-sm bg-white"
-                  placeholder="Subject"
+                  className="block w-full p-2.5 sm:p-3 rounded-xl border border-gray-300 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-200 text-gray-900 text-sm sm:text-base transition-all duration-200 shadow-sm bg-white appearance-none cursor-pointer"
+                  style={{
+                    backgroundImage: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e")`,
+                    backgroundPosition: 'right 0.75rem center',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: '1.5em 1.5em',
+                    paddingRight: '2.5rem'
+                  }}
                   required
-                />
+                >
+                  <option value="" disabled>Select a Service</option>
+                  <option value="Fresh Passport">Fresh Passport</option>
+                  <option value="Tatkaal Passport Service Mumbai">Tatkaal Passport Service Mumbai</option>
+                  <option value="Fast Track Immigration">Fast Track Immigration</option>
+                  <option value="Passport Renewal">Passport Renewal</option>
+                  <option value="Lost or Stolen Passport Assistance">Lost or Stolen Passport Assistance</option>
+                  <option value="Damaged Passport Replacement">Damaged Passport Replacement</option>
+                  <option value="Delete ECR Status from Passport">Delete ECR Status from Passport</option>
+                  <option value="Police Clearance Certificate (PPC)">Police Clearance Certificate (PPC)</option>
+                </select>
                 <textarea
                   name="message"
                   value={formData.message}

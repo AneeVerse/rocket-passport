@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { FaPassport, FaClock, FaSync, FaGlobe } from 'react-icons/fa';
+import { FaPassport, FaClock, FaSync, FaExclamationTriangle } from 'react-icons/fa';
 
 type ServiceItem = {
   icon: React.ReactNode;
@@ -28,10 +28,10 @@ const services: ServiceItem[] = [
       'Seamless renewal for expired passports and corrections for name changes, address updates, or damaged passport replacement.',
   },
   {
-    icon: <FaGlobe className="w-6 h-6 sm:w-8 sm:h-8" />,
-    title: 'International Travel Support',
+    icon: <FaExclamationTriangle className="w-6 h-6 sm:w-8 sm:h-8" />,
+    title: 'Damaged Passport Replacement',
     description:
-      'Complete assistance for international travel documentation, visa guidance, and travel advisory services for global destinations.',
+      'Replace damaged passports with ease. Our Mumbai-based team ensures all documentation is in order for quick reissuance.',
     highlight: true,
   },
 ];

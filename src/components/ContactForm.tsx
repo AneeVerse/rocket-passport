@@ -8,14 +8,14 @@ export default function ContactForm() {
     lastName: '',
     email: '',
     phoneNumber: '',
-    subject: '',
+    service: '',
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [statusMessage, setStatusMessage] = useState('');
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
@@ -47,7 +47,7 @@ export default function ContactForm() {
           lastName: '',
           email: '',
           phoneNumber: '',
-          subject: '',
+          service: '',
           message: ''
         });
       } else {
@@ -134,14 +134,30 @@ export default function ContactForm() {
         </div>
         
         <div>
-          <input
-            type="text"
-            name="subject"
-            value={formData.subject}
+          <select
+            name="service"
+            value={formData.service}
             onChange={handleChange}
-            placeholder="Subject"
-            className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#dc2626] focus:border-transparent text-sm text-gray-900 placeholder-gray-500"
-          />
+            required
+            className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#dc2626] focus:border-transparent text-sm text-gray-900 bg-white appearance-none cursor-pointer"
+            style={{
+              backgroundImage: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e")`,
+              backgroundPosition: 'right 0.5rem center',
+              backgroundRepeat: 'no-repeat',
+              backgroundSize: '1.5em 1.5em',
+              paddingRight: '2.5rem'
+            }}
+          >
+            <option value="" disabled>Select a Service</option>
+            <option value="Fresh Passport">Fresh Passport</option>
+            <option value="Tatkaal Passport Service Mumbai">Tatkaal Passport Service Mumbai</option>
+            <option value="Fast Track Immigration">Fast Track Immigration</option>
+            <option value="Passport Renewal">Passport Renewal</option>
+            <option value="Lost or Stolen Passport Assistance">Lost or Stolen Passport Assistance</option>
+            <option value="Damaged Passport Replacement">Damaged Passport Replacement</option>
+            <option value="Delete ECR Status from Passport">Delete ECR Status from Passport</option>
+            <option value="Police Clearance Certificate (PPC)">Police Clearance Certificate (PPC)</option>
+          </select>
         </div>
         
         <div>

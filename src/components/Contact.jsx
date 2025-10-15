@@ -7,7 +7,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    subject: "",
+    service: "",
     message: "",
   });
   const [loading, setLoading] = useState(false);
@@ -29,7 +29,7 @@ const Contact = () => {
       });
       if (response.ok) {
         setSubmitted(true);
-        setFormData({ name: "", email: "", subject: "", message: "" });
+        setFormData({ name: "", email: "", service: "", message: "" });
       } else {
         alert("Failed to send message. Please try again.");
       }
@@ -102,16 +102,31 @@ const Contact = () => {
               />
             </label>
             <label className="block">
-              <span className="text-gray-700">Subject</span>
-              <input
-                type="text"
-                name="subject"
-                value={formData.subject}
+              <span className="text-gray-700">Service</span>
+              <select
+                name="service"
+                value={formData.service}
                 onChange={handleChange}
-                className="block w-full mt-1 p-2 border-b-[2px] border-gray-300 focus:outline-none focus:border-red-600"
-                placeholder="Subject of your inquiry"
+                className="block w-full mt-1 p-2 border-b-[2px] border-gray-300 focus:outline-none focus:border-red-600 bg-white appearance-none cursor-pointer"
+                style={{
+                  backgroundImage: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e")`,
+                  backgroundPosition: 'right 0.5rem center',
+                  backgroundRepeat: 'no-repeat',
+                  backgroundSize: '1.5em 1.5em',
+                  paddingRight: '2.5rem'
+                }}
                 required
-              />
+              >
+                <option value="" disabled>Select a Service</option>
+                <option value="Fresh Passport">Fresh Passport</option>
+                <option value="Tatkaal Passport Service Mumbai">Tatkaal Passport Service Mumbai</option>
+                <option value="Fast Track Immigration">Fast Track Immigration</option>
+                <option value="Passport Renewal">Passport Renewal</option>
+                <option value="Lost or Stolen Passport Assistance">Lost or Stolen Passport Assistance</option>
+                <option value="Damaged Passport Replacement">Damaged Passport Replacement</option>
+                <option value="Delete ECR Status from Passport">Delete ECR Status from Passport</option>
+                <option value="Police Clearance Certificate (PPC)">Police Clearance Certificate (PPC)</option>
+              </select>
             </label>
             <label className="block">
               <span className="text-gray-700">Your message</span>
