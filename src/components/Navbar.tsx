@@ -35,8 +35,8 @@ export default function Navbar() {
                 className="h-15 md:h-20 w-auto"
               />
             </Link>
-            <div className="hidden sm:block">
-              <span className="text-black font-[1000] uppercase text-[20px] -ml-4">Tatkal Passport</span>
+            <div>
+              <span className="text-black font-[1000] uppercase text-[20px]  -ml-4">Tatkal Passport</span>
             </div>
           </div>
 
@@ -110,14 +110,14 @@ export default function Navbar() {
             <div className="flex items-center space-x-3">
               <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
                 <Image
-                  src="/images/nav-logo.png"
+                  src="/images/nav-logo1.png"
                   alt="Stardom Logo"
                   width={125}
                   height={23}
                   className="h-15 w-auto"
                 />
               </Link>
-              <span className="text-[#dc2626] font-semibold text-lg">Tatkal Passport</span>
+              <span className="text-black font-[1000] uppercase text-[20px] -ml-4">Tatkal Passport</span>
             </div>
             <button
               type="button"
