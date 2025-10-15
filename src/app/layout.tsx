@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Tatkal Passport - Fast Passport Services",
   description: "Get your passport quickly with our expert tatkal passport services. Fast, reliable, and hassle-free passport application assistance.",
   icons: {
-    icon: "/images/nav-logo.png",
+    icon: "/images/nav-logo1.png",
   },
 };
 

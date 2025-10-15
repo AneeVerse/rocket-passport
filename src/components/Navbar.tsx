@@ -23,7 +23,7 @@ export default function Navbar() {
           <div className="flex-shrink-0 flex items-center space-x-3">
             <Link href="/">
               <Image
-                src="/images/nav-logo.png"
+                src="/images/nav-logo1.png"
                 alt="Stardom Logo"
                 width={125}
                 height={23}
@@ -31,7 +31,8 @@ export default function Navbar() {
               />
             </Link>
             <div className="hidden sm:block">
-              <span className="text-[#dc2626] font-extrabold uppercase text-lg">Tatkal Passport</span>
+              <span className="text-[#dc2626] font-extrabold uppercase text-
+              xl -ml-4">Tatkal Passport</span>
             </div>
           </div>
 
