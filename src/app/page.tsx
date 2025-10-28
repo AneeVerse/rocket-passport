@@ -35,7 +35,7 @@ export default function Home() {
       <AboutUs />
       <ServiceSection />
       <TypesOfPassports />
-       {/* <BlogSection /> */}
+       <BlogSection />
       <FeedbackReviewComponent />
 
       <ConsultationSection />

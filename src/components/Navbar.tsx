@@ -55,12 +55,12 @@ export default function Navbar() {
               >
                 About
               </button>
-              {/* <button 
-                onClick={() => scrollToSection('blog')}
+              <Link 
+                href="/blog"
                 className="text-gray-700 hover:text-[#dc2626] px-3 py-2 text-sm font-medium transition-colors"
               >
                 Blog
-              </button> */}
+              </Link>
               <button 
                 onClick={() => scrollToSection('contact')}
                 className="text-gray-700 hover:text-[#dc2626] px-3 py-2 text-sm font-medium transition-colors"
@@ -146,12 +146,13 @@ export default function Navbar() {
               >
                 About
               </button>
-              <button 
-                onClick={() => scrollToSection('blog')}
+              <Link 
+                href="/blog"
+                onClick={() => setIsMobileMenuOpen(false)}
                 className="block px-4 py-4 text-gray-700 hover:text-[#dc2626] hover:bg-white text-xl font-medium transition-colors rounded-lg text-center w-full"
               >
                 Blog
-              </button>
+              </Link>
               <button 
                 onClick={() => scrollToSection('contact')}
                 className="block px-4 py-4 text-gray-700 hover:text-[#dc2626] hover:bg-white text-xl font-medium transition-colors rounded-lg text-center w-full"

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Calendar, Users, Target, FileCheck, Zap, DollarSign, HeadphonesIcon, ArrowRight } from 'lucide-react';
+import { Calendar, Users, Target, FileCheck, Zap, ArrowRight } from 'lucide-react';
 
 export default function AboutUs() {
   return (
