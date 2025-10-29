@@ -70,13 +70,13 @@ export default function BlogSection() {
         <div className="mt-8 sm:mt-12 grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
           {posts.map((post) => (
             <article key={post._id} className="bg-white rounded-xl shadow-sm ring-1 ring-gray-100 overflow-hidden hover:shadow-md transition-shadow duration-300">
-              <div className="relative h-48 sm:h-52">
+              <div className="relative h-56 sm:h-60">
                 {post.mainImage?.asset ? (
                   <Image
                     src={urlFor(post.mainImage).width(400).height(250).url()}
                     alt={post.mainImage.alt || post.title}
                     fill
-                    className="object-cover"
+                    className="object-cover object-top"
                   />
                 ) : (
                   <div className="w-full h-full bg-gradient-to-br from-[#dc2626] to-[#b91c1c] flex items-center justify-center">

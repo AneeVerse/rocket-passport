@@ -138,10 +138,22 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
               <div className="flex flex-wrap gap-3 items-center text-sm">
                 {post.author && (
                   <div className="flex items-center text-gray-600">
-                    <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center mr-2">
-                      <span className="text-red-600 font-semibold text-xs">
-                        {post.author.name.charAt(0)}
-                      </span>
+                    <div className="w-8 h-8 rounded-full overflow-hidden mr-2">
+                      {post.author.image?.asset ? (
+                        <Image
+                          src={urlFor(post.author.image).width(32).height(32).url()}
+                          alt={post.author.name}
+                          width={32}
+                          height={32}
+                          className="object-cover w-full h-full"
+                        />
+                      ) : (
+                        <div className="w-full h-full bg-red-100 flex items-center justify-center">
+                          <span className="text-red-600 font-semibold text-xs">
+                            {post.author.name.charAt(0)}
+                          </span>
+                        </div>
+                      )}
                     </div>
                     <span>By {post.author.name}</span>
                   </div>
