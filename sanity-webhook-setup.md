@@ -17,7 +17,7 @@ Your project now has these essential files for the Sanity webhook solution:
 ### 1. Access Sanity Management Console
 
 1. Go to [Sanity Management Console](https://www.sanity.io/manage)
-2. Select your project: `gdey5o8v`
+2. Select your project: `14yw474r`
 3. Navigate to **API** → **Webhooks**
 
 ### 2. Create New Webhook
@@ -93,9 +93,9 @@ Add these to your Vercel project:
 SANITY_WEBHOOK_SECRET=your-secure-secret-token
 
 # Sanity credentials (if not already set)
-SANITY_PROJECT_ID=gdey5o8v
+SANITY_PROJECT_ID=14yw474r
 SANITY_DATASET=production
-SANITY_API_VERSION=2024-03-13
+SANITY_API_VERSION=2025-10-28
 ```
 
 ## 📊 Monitoring Webhook Activity
