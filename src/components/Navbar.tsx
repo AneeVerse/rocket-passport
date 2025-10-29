@@ -3,9 +3,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import { useRouter, usePathname } from 'next/navigation';
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const router = useRouter();
+  const pathname = usePathname();
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -18,6 +21,30 @@ export default function Navbar() {
       });
     }
     setIsMobileMenuOpen(false);
+  };
+
+  const navigateToHomeAndScroll = (sectionId: string) => {
+    setIsMobileMenuOpen(false);
+    
+    if (pathname === '/') {
+      // Already on home page, just scroll
+      scrollToSection(sectionId);
+    } else {
+      // Navigate to home page first, then scroll
+      router.push('/');
+      // Wait for navigation to complete, then scroll
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          const navbarHeight = 80;
+          const elementPosition = element.offsetTop - navbarHeight;
+          window.scrollTo({
+            top: elementPosition,
+            behavior: 'smooth'
+          });
+        }
+      }, 100);
+    }
   };
 
   return (
@@ -35,22 +62,22 @@ export default function Navbar() {
                 className="h-15 md:h-20 w-auto"
               />
             </Link>
-            <div>
-              <span className="text-black font-[1000] uppercase text-[20px]  -ml-4">Tatkal Passport</span>
-            </div>
+            <Link href="/">
+              <span className="text-black font-[1000] uppercase text-[20px]  -ml-4 cursor-pointer hover:text-[#dc2626] transition-colors">Tatkal Passport</span>
+            </Link>
           </div>
 
           {/* Navigation Links - Desktop */}
           <div className="hidden md:block">
             <div className="flex items-center space-x-8 lg:mr-14">
               <button 
-                onClick={() => scrollToSection('services')}
+                onClick={() => navigateToHomeAndScroll('services')}
                 className="text-gray-700 hover:text-[#dc2626] px-3 py-2 text-sm font-medium transition-colors"
               >
                 Services
               </button>
               <button 
-                onClick={() => scrollToSection('about')}
+                onClick={() => navigateToHomeAndScroll('about')}
                 className="text-gray-700 hover:text-[#dc2626] px-3 py-2 text-sm font-medium transition-colors"
               >
                 About
@@ -68,7 +95,7 @@ export default function Navbar() {
                 PCC Mumbai
               </Link>
               <button 
-                onClick={() => scrollToSection('contact')}
+                onClick={() => navigateToHomeAndScroll('contact')}
                 className="text-gray-700 hover:text-[#dc2626] px-3 py-2 text-sm font-medium transition-colors"
               >
                 Contact Us
@@ -79,7 +106,7 @@ export default function Navbar() {
           {/* CTA Button - Desktop */}
           <div className="hidden md:flex items-center">
             <button 
-              onClick={() => scrollToSection('contact')}
+              onClick={() => navigateToHomeAndScroll('contact')}
               className="bg-[#dc2626] text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-[#b91c1c] transition-colors"
             >
               Get Free Consultation →
@@ -123,7 +150,9 @@ export default function Navbar() {
                   className="h-15 w-auto"
                 />
               </Link>
-              <span className="text-black font-[1000] uppercase text-[20px] -ml-4">Tatkal Passport</span>
+              <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
+                <span className="text-black font-[1000] uppercase text-[20px] -ml-4 cursor-pointer hover:text-[#dc2626] transition-colors">Tatkal Passport</span>
+              </Link>
             </div>
             <button
               type="button"
@@ -141,13 +170,13 @@ export default function Navbar() {
           <div className="flex-1 flex flex-col justify-center px-6 py-8">
             <div className="space-y-2">
               <button 
-                onClick={() => scrollToSection('services')}
+                onClick={() => navigateToHomeAndScroll('services')}
                 className="block px-4 py-4 text-gray-700 hover:text-[#dc2626] hover:bg-white text-xl font-medium transition-colors rounded-lg text-center w-full"
               >
                 Services
               </button>
               <button 
-                onClick={() => scrollToSection('about')}
+                onClick={() => navigateToHomeAndScroll('about')}
                 className="block px-4 py-4 text-gray-700 hover:text-[#dc2626] hover:bg-white text-xl font-medium transition-colors rounded-lg text-center w-full"
               >
                 About
@@ -167,7 +196,7 @@ export default function Navbar() {
                 PCC Mumbai
               </Link>
               <button 
-                onClick={() => scrollToSection('contact')}
+                onClick={() => navigateToHomeAndScroll('contact')}
                 className="block px-4 py-4 text-gray-700 hover:text-[#dc2626] hover:bg-white text-xl font-medium transition-colors rounded-lg text-center w-full"
               >
                 Contact Us
@@ -177,7 +206,7 @@ export default function Navbar() {
             {/* CTA Button */}
             <div className="mt-8 px-4">
               <button 
-                onClick={() => scrollToSection('contact')}
+                onClick={() => navigateToHomeAndScroll('contact')}
                 className="w-full bg-[#dc2626] text-white px-6 py-4 rounded-lg text-lg font-medium hover:bg-[#b91c1c] transition-colors"
               >
                 Get Free Consultation →
