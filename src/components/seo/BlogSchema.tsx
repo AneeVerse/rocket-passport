@@ -32,7 +32,7 @@ const BlogSchema: React.FC<BlogSchemaProps> = ({
 }) => {
   const blogSchema = {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": "Article",
     "headline": title,
     "description": description || excerpt,
     "url": `https://rocket-pass.vercel.app/blog/${slug}`,

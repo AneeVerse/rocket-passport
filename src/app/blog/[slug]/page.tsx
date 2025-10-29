@@ -10,6 +10,7 @@ import Footer from '../../../components/Footer.jsx'
 import SubscribeForm from '../../../components/SubscribeForm'
 import FAQComponent from '../../../components/FAQComponent'
 import BlogSchema from '@/components/seo/BlogSchema'
+import FAQSchema from '@/components/seo/FAQSchema'
 import WebPageSchema from '@/components/seo/WebPageSchema'
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
 
@@ -110,6 +111,13 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         categories={post.categories?.map(cat => cat.title)}
         excerpt={post.excerpt}
       />
+      {/* Dynamic FAQ Schema - Only render if FAQ data exists */}
+      {post.faq && post.faq.length > 0 && (
+        <FAQSchema 
+          faqData={post.faq}
+          pageTitle={post.title}
+        />
+      )}
       <WebPageSchema />
       <BreadcrumbSchema />
       <Navbar />
