@@ -61,6 +61,12 @@ export default function Navbar() {
               >
                 Blog
               </Link>
+              <Link 
+                href="/ppc-mumbai"
+                className="text-gray-700 hover:text-[#dc2626] px-3 py-2 text-sm font-medium transition-colors"
+              >
+                PCC Mumbai
+              </Link>
               <button 
                 onClick={() => scrollToSection('contact')}
                 className="text-gray-700 hover:text-[#dc2626] px-3 py-2 text-sm font-medium transition-colors"
@@ -152,6 +158,13 @@ export default function Navbar() {
                 className="block px-4 py-4 text-gray-700 hover:text-[#dc2626] hover:bg-white text-xl font-medium transition-colors rounded-lg text-center w-full"
               >
                 Blog
+              </Link>
+              <Link 
+                href="/ppc-mumbai"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block px-4 py-4 text-gray-700 hover:text-[#dc2626] hover:bg-white text-xl font-medium transition-colors rounded-lg text-center w-full"
+              >
+                PCC Mumbai
               </Link>
               <button 
                 onClick={() => scrollToSection('contact')}
