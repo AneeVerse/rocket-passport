@@ -9,6 +9,9 @@ import Navbar from '../../../components/Navbar'
 import Footer from '../../../components/Footer.jsx'
 import SubscribeForm from '../../../components/SubscribeForm'
 import FAQComponent from '../../../components/FAQComponent'
+import BlogSchema from '@/components/seo/BlogSchema'
+import WebPageSchema from '@/components/seo/WebPageSchema'
+import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
 
 // Define custom components for PortableText with red theme
 const components: PortableTextComponents = {
@@ -93,6 +96,22 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <BlogSchema 
+        title={post.title}
+        description={post.excerpt || post.title}
+        slug={post.slug.current}
+        author={{
+          name: post.author?.name || "Rocket Pass Team",
+          image: post.author?.image ? urlFor(post.author.image).url() : undefined
+        }}
+        publishedAt={post.publishedAt}
+        updatedAt={post._updatedAt}
+        mainImage={post.mainImage ? urlFor(post.mainImage).url() : undefined}
+        categories={post.categories?.map(cat => cat.title)}
+        excerpt={post.excerpt}
+      />
+      <WebPageSchema />
+      <BreadcrumbSchema />
       <Navbar />
       
       <div className="max-w-7xl mx-auto px-4 py-10">

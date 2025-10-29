@@ -16,6 +16,7 @@ export const urlFor = (source: SanityImageSource) => builder.image(source)
 
 export interface BlogPost {
   _id: string
+  _updatedAt?: string
   title: string
   slug: {
     current: string
@@ -76,6 +77,7 @@ export const postsQuery = `*[_type == "post"] | order(publishedAt desc) {
 
 export const postQuery = `*[_type == "post" && slug.current == $slug][0] {
   _id,
+  _updatedAt,
   title,
   slug,
   author->{

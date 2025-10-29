@@ -9,6 +9,8 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer.jsx';
 import BlogCard from '../../components/BlogCard';
 import SubscribeForm from '../../components/SubscribeForm';
+import WebPageSchema from '@/components/seo/WebPageSchema';
+import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 
 export default function BlogPage() {
   const [posts, setPosts] = useState<BlogPost[]>([]);
@@ -86,6 +88,8 @@ export default function BlogPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <WebPageSchema />
+      <BreadcrumbSchema />
       <Navbar />
       <div className="max-w-7xl mx-auto px-4 py-10">
         {/* Header Section */}

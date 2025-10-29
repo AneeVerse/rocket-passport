@@ -15,9 +15,29 @@ import Footer from '@/components/Footer.jsx';
 import FAQ from '@/components/FAQ';
 import FloatingActionButton from '@/components/FloatingActionButton';
 import PopupContactForm from '@/components/PopupContactForm';
+import WebPageSchema from '@/components/seo/WebPageSchema';
+import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
+import FAQSchema from '@/components/seo/FAQSchema';
+import ServiceSchema from '@/components/seo/ServiceSchema';
 
 export default function Home() {
   const [showPopup, setShowPopup] = useState(false);
+
+  // Sample FAQ data for schema
+  const faqData = [
+    {
+      question: "How long does it take to get a tatkal passport?",
+      answer: "Tatkal passport processing typically takes 1-3 working days from the date of application submission."
+    },
+    {
+      question: "What documents are required for tatkal passport?",
+      answer: "You need proof of identity, address proof, birth certificate, and additional fees for tatkal processing."
+    },
+    {
+      question: "Can I track my passport application status?",
+      answer: "Yes, you can track your passport application status online using your application reference number."
+    }
+  ];
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -29,6 +49,16 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
+      <WebPageSchema />
+      <BreadcrumbSchema />
+      <FAQSchema faqData={faqData} pageTitle="Tatkal Passport Services" />
+      <ServiceSchema 
+        serviceName="Tatkal Passport Services"
+        description="Fast and reliable tatkal passport processing services with expert assistance and quick turnaround times."
+        price={{ amount: 2000, currency: "INR" }}
+        duration="1-3 working days"
+        category="Passport Services"
+      />
       <Navbar />
       <Hero />
       <BookSection />
