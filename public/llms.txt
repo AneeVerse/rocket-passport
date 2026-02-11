@@ -1,0 +1,22 @@
+# Rocket Pass
+
+> Professional visa services, passport assistance, and immigration consultancy worldwide.
+
+## About
+Rocket Pass provides expert assistance for passport applications (including Tatkal), visa processing, and immigration consultancy. We specialize in study abroad, work visas, tourist visas, and business visas, ensuring a fast and reliable experience for our clients.
+
+## Key Pages
+- Home: https://rocket-pass.vercel.app/
+- Blog: https://rocket-pass.vercel.app/blog
+- Studio: https://rocket-pass.vercel.app/studio
+
+## Services
+- Passport Assistance: Expert guidance for fresh and renewal passport applications.
+- Tatkal Passport: Fast-track passport processing within 1-3 working days.
+- Visa Services: Comprehensive support for tourist, work, student, and business visas.
+- Immigration Consultancy: Professional advice for international relocation and migration.
+
+## Contact
+- Email: info@rocket-pass.vercel.app
+- Phone: +91 9137452601
+- Address: Mumbai, India

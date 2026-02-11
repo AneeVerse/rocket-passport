@@ -79,8 +79,8 @@ const OrganizationSchema: React.FC = () => {
     },
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "150",
+      "ratingValue": "5.0",
+      "reviewCount": "50",
       "bestRating": "5",
       "worstRating": "1"
     },

@@ -71,7 +71,50 @@ const components: PortableTextComponents = {
   },
 }
 
+// Generate dynamic metadata for blog posts
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const post = await getPostBySlug(slug)
+
+  if (!post) return {}
+
+  const title = `${post.title} | Rocket Pass Blog`
+  const description = post.excerpt || `Read about ${post.title} and more on the Rocket Pass Blog.`
+  const image = post.mainImage ? urlFor(post.mainImage).url() : "https://rocket-pass.vercel.app/images/nav-logo.png"
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: `/blog/${slug}`,
+    },
+    openGraph: {
+      title,
+      description,
+      url: `https://rocket-pass.vercel.app/blog/${slug}`,
+      type: 'article',
+      publishedTime: post.publishedAt,
+      modifiedTime: post._updatedAt,
+      images: [
+        {
+          url: image,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [image],
+    },
+  }
+}
+
 export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
+
   const { slug } = await params
   const post = await getPostBySlug(slug)
 
@@ -97,7 +140,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <BlogSchema 
+      <BlogSchema
         title={post.title}
         description={post.excerpt || post.title}
         slug={post.slug.current}
@@ -113,7 +156,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       />
       {/* Dynamic FAQ Schema - Only render if FAQ data exists */}
       {post.faq && post.faq.length > 0 && (
-        <FAQSchema 
+        <FAQSchema
           faqData={post.faq}
           pageTitle={post.title}
         />
@@ -121,7 +164,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       <WebPageSchema />
       <BreadcrumbSchema />
       <Navbar />
-      
+
       <div className="max-w-7xl mx-auto px-4 py-10">
         {/* Main Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
@@ -198,7 +241,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
               <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-a:text-red-600 prose-strong:text-gray-900">
                 <PortableText value={post.body} components={components} />
               </div>
-              
+
               {/* FAQ Section */}
               {post.faq && post.faq.length > 0 && (
                 <div className="mt-12 pt-8 border-t border-gray-200">
@@ -217,7 +260,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           </div>
         </div>
       </div>
-      
+
       <Footer />
     </div>
   )
