@@ -61,30 +61,16 @@ const Footer = () => {
             <div className="space-y-4">
               <h3 className="text-lg font-bold text-white mb-0">Office Address</h3>
               <p className="text-sm text-white/85">
-                Office No - 116, First Floor, Seawoods Corner CHS LTD., Plot No. 19/A, Sec 25, Nerul (E), Navi Mumbai 400706
+                We Work, Reheja Platinum Road, off Andheri - Kurla Road, Sag Baug, Marol, Andheri East, Mumbai, Maharashtra 400059
               </p>
             </div>
             <div className="mt-6">
               <p className="font-semibold text-white">Call Us</p>
               <Link
-                href="tel:+917021388625"
+                href="tel:+9137878187"
                 className="text-white/90 text-sm font-medium hover:text-white transition"
               >
-                +91 7021388625
-              </Link>
-             <span className="text-white/90 text-sm font-medium"> | </span>
-              <Link
-                href="tel:+918108000188"
-                className="text-white/90 text-sm font-medium hover:text-white transition"
-              >
-                +91 8108000188
-              </Link>
-             <span className="text-white/90 text-sm font-medium"> | </span>
-              <Link
-                href="tel:+919322444733"
-                className="text-white/90 text-sm font-medium hover:text-white transition"
-              >
-                +91 93224 44733
+                +91 378 78187
               </Link>
             </div>
             <div className="mt-4">

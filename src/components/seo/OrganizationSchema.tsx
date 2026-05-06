@@ -16,16 +16,16 @@ const OrganizationSchema: React.FC = () => {
     },
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Office No. 03, Plot No. 45, near HP Petrol Pump, Seawoods West, Sector 44",
-      "addressLocality": "Seawoods, Navi Mumbai",
+      "streetAddress": "We Work, Reheja Platinum Road, off Andheri - Kurla Road, Sag Baug, Marol, Andheri East",
+      "addressLocality": "Mumbai",
       "addressRegion": "Maharashtra",
-      "postalCode": "400706",
+      "postalCode": "400059",
       "addressCountry": "IN"
     },
     "contactPoint": [
       {
         "@type": "ContactPoint",
-        "telephone": "+91-91527-55529",
+        "telephone": "+91-378-78187",
         "contactType": "customer service",
         "availableLanguage": ["English", "Hindi"],
         "areaServed": "IN"

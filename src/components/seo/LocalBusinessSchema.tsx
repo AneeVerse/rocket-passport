@@ -7,20 +7,20 @@ const LocalBusinessSchema: React.FC = () => {
     "name": "Rocket Pass",
     "description": "Professional visa services, passport assistance, and immigration consultancy for study abroad, work visas, tourist visas, and business visas worldwide.",
     "url": "https://rocket-pass.vercel.app",
-    "telephone": "+91-91527-55529",
+    "telephone": "+91-378-78187",
     "email": "info@rocketpass.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Office No. 03, Plot No. 45, near HP Petrol Pump, Seawoods West, Sector 44",
-      "addressLocality": "Seawoods, Navi Mumbai",
+      "streetAddress": "We Work, Reheja Platinum Road, off Andheri - Kurla Road, Sag Baug, Marol, Andheri East",
+      "addressLocality": "Mumbai",
       "addressRegion": "Maharashtra",
-      "postalCode": "400706",
+      "postalCode": "400059",
       "addressCountry": "IN"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "19.0330",
-      "longitude": "73.0297"
+      "latitude": "19.1136",
+      "longitude": "72.8697"
     },
     "openingHoursSpecification": [
       {
@@ -55,8 +55,8 @@ const LocalBusinessSchema: React.FC = () => {
       "@type": "GeoCircle",
       "geoMidpoint": {
         "@type": "GeoCoordinates",
-        "latitude": "19.0330",
-        "longitude": "73.0297"
+        "latitude": "19.1136",
+        "longitude": "72.8697"
       },
       "geoRadius": "50000"
     },
@@ -64,7 +64,7 @@ const LocalBusinessSchema: React.FC = () => {
       "@type": "AdministrativeArea",
       "name": "Mumbai Metropolitan Region"
     },
-    "hasMap": "https://maps.google.com/?q=Seawoods+West+Navi+Mumbai",
+    "hasMap": "https://maps.google.com/?q=WeWork+Reheja+Platinum+Andheri+East+Mumbai",
     "logo": {
       "@type": "ImageObject",
       "url": "https://rocket-pass.vercel.app/images/nav-logo.png"

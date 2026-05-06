@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function BookSection() {
   return (
     <section className="relative mt-0 lg:-mt-18 z-30">
-      <div className="max-w-[1400] mx-auto px-4 sm:px-6 lg:px-2">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-2">
         {/* Main container with white background and curved pattern */}
         <div className="bg-white rounded-2xl sm:rounded-3xl relative overflow-hidden pt-16 sm:pt-20 lg:pt-16 pb-16 sm:pb-24 px-4 sm:px-8 lg:px-16 shadow-2xl">
           {/* Decorative wave pattern background */}

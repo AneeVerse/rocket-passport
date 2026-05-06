@@ -1,6 +1,6 @@
 "use client";
 import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { FaWhatsapp, FaEnvelope, FaPhone } from 'react-icons/fa';
 import { IoIosClose, IoMdChatboxes } from "react-icons/io";
 import { MdContentCopy } from 'react-icons/md';
@@ -59,7 +59,7 @@ const FloatingActionButton = () => {
           </motion.a>
 
           <motion.a
-            href="tel:+917021388625"
+            href="tel:+9137878187"
             className="w-14 h-14 bg-white text-[#dc2626] rounded-full flex items-center justify-center shadow-lg border-2 border-[#dc2626] hover:bg-[#dc2626] hover:text-white transition-colors duration-200"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -100,7 +100,7 @@ const FloatingActionButton = () => {
                   rel="noopener noreferrer"
                 >
                   <FaWhatsapp size={24} />
-                  <span className="ml-3 text-lg font-medium text-gray-700">WhatsApp: +91 7021388625 / +91 8108000188 / +91 93224 44733</span>
+                  <span className="ml-3 text-lg font-medium text-gray-700">WhatsApp: +91 7021388625</span>
                 </a>
                 <motion.button
                   onClick={() => handleCopy('+91 7021388625')}
@@ -136,14 +136,14 @@ const FloatingActionButton = () => {
                 whileHover={{ scale: 1.05 }}
               >
                 <a
-                  href="tel:+917021388625"
+                  href="tel:+9137878187"
                   className="flex items-center text-[#dc2626] cursor-pointer"
                 >
                   <FaPhone size={24} />
-                  <span className="ml-3 text-lg font-medium text-gray-700">Call: +91 7021388625 / +91 8108000188 / +91 93224 44733</span>
+                  <span className="ml-3 text-lg font-medium text-gray-700">Call: +91 378 78187</span>
                 </a>
                 <motion.button
-                  onClick={() => handleCopy('+91 7021388625')}
+                  onClick={() => handleCopy('+91 378 78187')}
                   className="text-gray-500 hover:text-[#dc2626] focus:outline-none transition-colors duration-200"
                   whileTap={{ scale: 0.9 }}
                 >

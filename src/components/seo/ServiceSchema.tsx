@@ -48,7 +48,7 @@ const ServiceSchema: React.FC<ServiceSchemaProps> = ({
       },
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+91-9876543210",
+        "telephone": "+91-378-78187",
         "contactType": "customer service",
         "email": "info@rocketpass.com",
         "availableLanguage": ["English", "Hindi"]
@@ -61,8 +61,8 @@ const ServiceSchema: React.FC<ServiceSchemaProps> = ({
     "availableChannel": {
       "@type": "ServiceChannel",
       "serviceUrl": url || "https://rocket-pass.vercel.app",
-      "serviceSmsNumber": "+91-9876543210",
-      "servicePhone": "+91-9876543210"
+      "serviceSmsNumber": "+91-378-78187",
+      "servicePhone": "+91-378-78187"
     },
     "hoursAvailable": {
       "@type": "OpeningHoursSpecification",

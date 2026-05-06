@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
@@ -55,11 +55,11 @@ const Contact = () => {
               </p>
               <p className="flex items-center space-x-2">
                 <FaPhone className="text-lg" />
-                <span>+91 7021388625 / +91 8108000188 / +91 93224 44733</span>
+                <span>+91 378 78187</span>
               </p>
               <p className="flex items-center space-x-2">
                 <FaMapMarkerAlt className="text-lg" />
-                <span>Office No - 116, First Floor, Seawoods Corner CHS LTD., Plot No. 19/A, Sec 25, Nerul (E), Navi Mumbai 400706</span>
+                <span>We Work, Reheja Platinum Road, off Andheri - Kurla Road, Sag Baug, Marol, Andheri East, Mumbai, Maharashtra 400059</span>
               </p>
             </div>
             <div className="flex space-x-4 mt-4 md:mt-6">
