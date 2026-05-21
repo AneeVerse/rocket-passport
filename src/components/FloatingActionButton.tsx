@@ -140,10 +140,10 @@ const FloatingActionButton = () => {
                   className="flex items-center text-[#dc2626] cursor-pointer"
                 >
                   <FaPhone size={24} />
-                  <span className="ml-3 text-lg font-medium text-gray-700">Call: +91 378 78187</span>
+                  <span className="ml-3 text-lg font-medium text-gray-700">Call: +91 9137878187</span>
                 </a>
                 <motion.button
-                  onClick={() => handleCopy('+91 378 78187')}
+                  onClick={() => handleCopy('+91 9137878187')}
                   className="text-gray-500 hover:text-[#dc2626] focus:outline-none transition-colors duration-200"
                   whileTap={{ scale: 0.9 }}
                 >

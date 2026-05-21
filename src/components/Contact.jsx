@@ -55,7 +55,7 @@ const Contact = () => {
               </p>
               <p className="flex items-center space-x-2">
                 <FaPhone className="text-lg" />
-                <span>+91 378 78187</span>
+                <span>+91 9137878187</span>
               </p>
               <p className="flex items-center space-x-2">
                 <FaMapMarkerAlt className="text-lg" />
